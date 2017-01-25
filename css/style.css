@@ -1,15 +1,3 @@
-/*
- * Sept - Free Bootstrap 3 Theme/Landing page
- * Author: CantoThemes
- * Author URL: https://www.cantothemes.com/
- * License: Attribution-NonCommercial CC BY-NC 
- * License URL: https://creativecommons.org/licenses/by-nc/4.0/
- * 
- * -------------------------------------------------------------------
- * This theme under "Attribution-NonCommercial CC BY-NC". You can't remove footer credit link.
- */
-
-
 body {
   font-family: 'Roboto', sans-serif;
   color: #808080;
@@ -344,12 +332,12 @@ h6 {
   margin: auto;
 }
 .section-title:before {
-  padding: 10px;
+  padding-bottom: 20px;
   content: "";
   display: block;
   width: 150px;
   height: 51px;
-  background-image: url(../images/title-top.png);
+  background-image: url(#);
   background-repeat: no-repeat;
 }
 .bottom-line {
@@ -712,7 +700,7 @@ ul.styled-list.list-star li:before {
   margin-bottom: 40px;
 }
 .portfolio-item h2{
-  font-weight: 300;
+  font-weight: 100;
 }
 .portfolio-item span{
   font-weight: bold;
@@ -968,7 +956,7 @@ footer.site-footer a:hover {
   position: fixed; 
   overflow: hidden; 
   width: 240px; 
-  height: 803px; 
+  height: 2000px; 
   background-image: url("../photos/headerBackground2.jpg"); 
   border-right: 1px solid #eeeeee; 
 }
