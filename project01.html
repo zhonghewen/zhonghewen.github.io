@@ -1,435 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<title>Zhonghe Wen/ Project 01</title>
-		
-		<link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Roboto" rel="stylesheet">
-		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
 
+<head>
 
-		<link href="css/owl.carousel.css" rel="stylesheet">
-		<link href="css/owl.theme.css" rel="stylesheet">
-		<link href="css/owl.transitions.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<link href="css/style.css" rel="stylesheet">
+    <title>ZhongheWen Project01 Potluck</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Roboto" rel="stylesheet">
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.min.js"></script>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
-	</head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<body data-spy="scroll" data-target="#drawer">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
 
-        <!--<div class="container">-->
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-            <!-- Drawer -->
-            <aside >
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-                <!-- Drawer scroll area -->
-                <div class="" >
-                	<div class="drawer-overview">
-	                    <!-- Drawer logo -->
-	                    <div id="logo" class="drawer-header">
-	                        <a href="index.html"><img style="width: 80%; padding-top: 20px; padding-left: 40px; padding-bottom: 20px" src="photos/ZhongheLogoWhitecopy.png" alt="personalLogo"></a>
-	                    </div>
+</head>
 
-	                    <!-- Drawer navigation -->
-	                    <nav class="drawer-nav" id="drawer" >
-	                        <ul>
-	                            <li class="nav-header"><a href="index.html">
-	                            <i class="fa fa-chevron-left" aria-hidden="true"></i>  Back</a></li>
-	                            <li class="nav-header"><a href="#overview">Overview</a></li>
+<body>
 
-	                            <li class="nav-header"><a href="#research">Research</a></li>
-			                    <li class="nav-item"><a href="#observation"><i class="fa fa-eye" aria-hidden="true"></i> Observation</a></li>
-			                    <li class="nav-item"><a href="#taskAnalysis"><i class="fa fa-eye" aria-hidden="true"></i> Tasks Analysis</a></li>			                    
-			                    <li class="nav-item"><a href="#taskAnalysis"><i class="fa fa-eye" aria-hidden="true"></i> Contexual Interview</a></li>
-			                    <li class="nav-item"><a href="#affinityMapping"><i class="fa fa-eye" aria-hidden="true"></i>  Affinity Mapping</a></li>	         
-			                    <li class="nav-item"><a href="#survey"><i class="fa fa-eye" aria-hidden="true"></i> Survey</a></li>
-			                    <li class="nav-item"><a href="#persona"><i class="fa fa-eye" aria-hidden="true"></i> Persona</a></li>
+    <div id="wrapper">
 
-	                            <li class="nav-header"><a href="#design">Design</a></li>
-			                    <li class="nav-item"><a href="#brainStorming"><i class="fa fa-eye" aria-hidden="true"></i>  Brainstorming</a></li>
-			                    <li class="nav-item"><a href="#convergence"><i class="fa fa-eye" aria-hidden="true"></i>  Major Ideas</a></li>
-			                    <li class="nav-item"><a href="#convergence"><i class="fa fa-eye" aria-hidden="true"></i>  Convergence</a></li>
-			                    <li class="nav-item "><a href="#cardSorting"><i class="fa fa-eye" aria-hidden="true"></i>  Card Sorting</a></li>
-			                    <li class="nav-item"><a href="#paperPrototype"><i class="fa fa-eye" aria-hidden="true"></i>  Paper Prototype</a></li>
-			                    <li class="nav-item"><a href="#prototype"><i class="fa fa-eye" aria-hidden="true"></i>  Prototype</a></li>
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="padding:10px 10px 10px 40px;"><img style="height: 100%; " src="photos/ZhongheLogoWhitecopy.png" alt="personalLogo"></a>
+            </div>
+            <!-- Top Menu Items -->
+            <!--<ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>-->
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="nav-header"><a href="index.html">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>  Back</a></li>
+                    <li class="nav-header active"><a href="#overview">Overview</a></li>
 
-	                            <li class="nav-header"><a href="#evaluation">Evaluation</a></li>
-	                            <li class="nav-header"><a href="#reflection">Reflection</a></li>        
+                    <li class="nav-header"><a href="#research">Research</a></li>
+                    <li class="nav-item"><a href="#observation"><i class="fa fa-eye" aria-hidden="true"></i> Observation</a></li>
+                    <li class="nav-item"><a href="#taskAnalysis"><i class="fa fa-eye" aria-hidden="true"></i> Tasks Analysis</a></li>                               
+                    <li class="nav-item"><a href="#taskAnalysis"><i class="fa fa-eye" aria-hidden="true"></i> Contexual Interview</a></li>
+                    <li class="nav-item"><a href="#affinityMapping"><i class="fa fa-eye" aria-hidden="true"></i>  Affinity Mapping</a></li>          
+                    <li class="nav-item"><a href="#survey"><i class="fa fa-eye" aria-hidden="true"></i> Survey</a></li>
+                    <li class="nav-item"><a href="#persona"><i class="fa fa-eye" aria-hidden="true"></i> Persona</a></li>
 
-	                        </ul>
-	                    </nav>
-	                    <!-- End drawer navigation -->
+                    <li class="nav-header"><a href="#design">Design</a></li>
+                    <li class="nav-item"><a href="#brainStorming"><i class="fa fa-eye" aria-hidden="true"></i>  Brainstorming</a></li>
+                    <li class="nav-item"><a href="#convergence"><i class="fa fa-eye" aria-hidden="true"></i>  Major Ideas</a></li>
+                    <li class="nav-item"><a href="#convergence"><i class="fa fa-eye" aria-hidden="true"></i>  Convergence</a></li>
+                    <li class="nav-item "><a href="#cardSorting"><i class="fa fa-eye" aria-hidden="true"></i>  Card Sorting</a></li>
+                    <li class="nav-item"><a href="#paperPrototype"><i class="fa fa-eye" aria-hidden="true"></i>  Paper Prototype</a></li>
+                    <li class="nav-item"><a href="#prototype"><i class="fa fa-eye" aria-hidden="true"></i>  Prototype</a></li>
+
+                    <li class="nav-header"><a href="#evaluation">Evaluation</a></li>
+                    <li class="nav-header"><a href="#reflection">Reflection</a></li>        
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row" style="padding-top: 40px;" id="overview">
+
+                    <div class="col-xs-12" >
+                        <div class="section-title st-center">
+                            <p >1 OVERVIEW</p>
+                        </div>
+                    </div>
+                    <div class="row col-xs-10 col-xs-offset-1 ">
+                        <div class="faq" style="text-align: center; margin-bottom: 0px; ">
+                            <h3>Problem Space</h3>
+                            <ul class="col-xs-offset-1" style="text-align: left;">
+                            <li>Have you ever tried to order some unfamiliar foods at restaurants but found it awful?</li>
+                            <li>Have you ever listened carefully to the server's introduction to a special dish but still be confused about the taste?</li>
+                            <li>Have you ever ordered a famialiar dish but found it tastes completely different compared to your memory?</li>
+                            <li>Or have you ever found it difficult to make a choice facing so many choices? etc.</li></ul>
+                            <p>We are trying to help international students understand the process of deciding and ordering foods at the on-campus restaurants. Also, help them fight food neophobia and increase their willingness to try out new and novel foods based on their dietary restriction, preference and their friends’ recommendation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                            <p></p>
+                            <img src="photos/problemAreas.png" style="width: 90%;">
+                        </div>
+                        <div class="faq col-xs-12 col-sm-6" style="margin-bottom: 0px;">
+                            <h3>Target User</h3>
+                            <p>Our target users are international students who are:
+                            <ul>                                
+                            <li>English is a 2nd+ language</li> 
+                            <li>Unfamiliar with American food choices</li>
+                            <li>New to America (less than one year)</li>
+                            <li>Wish to avoid public embarrassment</li>
+                            <li>Would like to try new foods</li>
+                            </ul>
+                            </p>
+                        </div>                          
+                    </div>                      
+                    <div class="col-sm-12">
+                        <div class="faq col-xs-12 col-sm-5 " style="margin-bottom: 0px; text-align: right;">
+                            <h3>Duration</h3>
+                            <p>Sept.2016 - Dec.2016</p>                         
+                            <h3>Team</h3>
+                            <p>Zhonghe Wen, Yiran Ma, Phillip Roberts<br> Mahesh Ramesh Kumar</p>
+                            <h3>Plan &amp; My Role</h3>
+                            <p>Shown in the right diagram</p>
+                            <h3>Links</h3>
+                            <p><a href="#prototype">Prototype</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#poster">Poster</a> </p>
+                        </div>                          
+                        <div class="faq col-xs-12 col-sm-5"  style="margin-bottom: 0px; padding-top: 28px;">
+                            <a href="zhonghewen.github.io/photos/roleDescription.png"><img src="photos/roleDescription.png" style="width: 100%"></a>                                    
+                        </div>
+                    </div>
+                </div>  
+                <!-- /.row -->
+
+                <div class="row" style="padding-top: 40px;" id="research">
+                    <div class="col-xs-12">
+                        <div class="section-title st-center">
+                            <p>2 RESEARCH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+                            <p></p>
+                            <img src="photos/taskAnalysis.png" style="width: 100%; border: 1px solid grey;">
+                        </div>
+                        <div class="faq col-xs-12 col-sm-6" style="margin-bottom: 0px;" id="observation">
+                            <h3 id="observation">2.1 Observation </h3>
+                            <p>For <b>better understand the problem</b> area we did four 30-minute natural observations in different campus restaurants, observing international students': oral communication with the server, body language, facial expressions, etc.<br>
+                            Through the observation, we somewhat confirmed our problem area. <b>However, what are reasons behind their behaviors? </b>
+                            </p>
+                            <h3 id="taskAnalysis">2.2 Task Analysis &amp; 2.3 Contexual Interview</h3>
+                            <p> <b>To get the key insights</b> we decided to conduct task analysis (to understand the specific steps of ordering therefore better prepare for the interviews) and contexual interviews. <br>
+                            The task analysis is shown in the left diagram. <i>It varies according to the dining place.</i><br>
+                            Then we did 9 contexual interviews and post session interviews, wrote user profiles &amp; affinity notes used for affinity mapping to get the insights.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;" id="affinityMapping">
+                            <h3>2.4 Affinity Mapping</h3>
+                            <p>The pictures below shows the process of affinity mapping. And finally we found that:
+                            <div class="col-xs-8 col-xs-offset-2" style="text-align: left;">
+                            <ol>
+                                <li>People prefer familiar flavor but at the same time is open-minded to new foods.</li>
+                                <li>People value their friend's opinions.</li>
+                                <li>People have difficulties understanding the menu/ordering process.</li>
+                            </ol></p>
+                            </div>
+                            <img src="photos/affinityMapping.png" style="width: 30%">                               
+                            <img src="photos/affinityMapping2.png" style="width: 30%">
+                            <img src="photos/affinityMappingResults.png" style="width: 30%">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-top: 40px;">
+                        <div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px;padding-top: 20px; text-align: center;" id="survey">
+                            <h3>2.5 Survey</h3>
+                            <p><b>To validate the insights from affinity mapping</b> we choose to conduct a survey on it which was released on Quatrics and got 60 effective responses. Results showed that the top 3 concerns for foods are price, flavor and friends' recommendation. And here are some important statistics about it.</p>
+                            <div class="col-xs-7 col-xs-offset-3" style="text-align: left;">
+                            <ul>                                
+                                <li>53/60 Try new food because of recommendation from friends</li>
+                                <li>51/60 Like to try new food</li>
+                                <li>32/60 Need more than moderate help on dining</li> 
+                            </ul>                                   
+                            </div>
+                                                    
+                        </div>                          
+                        <!--<div class="faq col-xs-5"  style="margin-bottom: 0px; padding-top: 40px; ">
+                            <img src="photos/surveyData.png" style="width: 90%">                                        
+                        </div>-->
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;" id="persona">
+                            <h3>2.6 Persona</h3>
+                            <p>Based on the statistics from our survey we created three personas, Yan, Ram and Pablo, <b>to guide our design</b>. Among the three personas Yan is our major persona. The details are shown in the diagram below.</p>
+                            <p><img src="photos/persona1.png" style="width: 60%">&nbsp;<br> </p>                        
+                            <p><img src="photos/persona2.png" style="width: 60%">&nbsp;<br></p>
+                            <p><img src="photos/persona3.png" style="width: 60%">&nbsp;<br></p>
+                        </div>
+                    </div>                  
+                </div>  
+                <!-- /.row -->
+
+                <div class="row" style="padding-top: 40px;" id="design">
+                    <div class="col-xs-12">
+                        <div class="section-title st-center">
+                            <p>3 DESIGN</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;"  id="brainStorming">
+                            <h3>3.1 BrainStorming </h3>
+                        </div>  
+                        <div class="faq col-xs-10 col-xs-offset-1" style="text-align: center;">
+                            <p>To generate more creative ideas we adopted brainstorming, encouraging and inspiring each other for several iterations. and finaly got 40 amazing ideas.</p>
+                            <img src="photos/brainStorming1.png" style="width: 40%; ">
+                            <img src="photos/brainStorming2.png" style="width: 50%; ">
+                        </div>
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="convergence" >
+                            <h3>3.2 Convergence &amp; 3.3 Major Ideas</h3>
+                            <p>Apparently we can't use all the 40 ideas within our app although all of them are creative and interesting. So we voted every idea for its feasibility and impact based on our user needs and finally got 3 major ideas. </p>
+                            <div class="col-xs-4">
+                            <p>Encourage users to try new food in a game environment. It will randomly assign the user a high ranking/ rating food. </p>
+                            <img src="photos/designIdea1.png" style="width: 80%;">
+                            </div>
+                            <div class="col-xs-4">
+                            <p>Make use of google glass to provide real time information of food. Avoid the embarrasement of blocking the line.</p>
+                            <img src="photos/designIdea2.png" style="width: 100%;">                             
+                            </div>
+                            <div class="col-xs-4">
+                            <p>Recommend foods based on the user’s preference and matched with people with similar taste in food.</p>
+                            <img src="photos/designIdea3.png" style="width: 100%;">
+                            </div>
+                            <p>We also had an in-class design sprint session, letting our classmates vote for their favorite (green dots), confused (blue dots), neutral ideas (yellow dots). </p>
+                            <div class="col-xs-4">
+                            <img src="photos/designSprint1.png" style="width: 100%;">   
+                            </div>
+                            <div class="col-xs-4">                                                          
+                            <img src="photos/designSprint2.png" style="width: 100%;">
+                            </div>
+                            <div class="col-xs-4">                                                          
+                            <img src="photos/designSprint3.png" style="width: 100%;">
+                            </div>  
+                            <p>Based on these feedback, we reevaluate these ideas and decided the final idea, gamification.</p>
+
+                        </div>                      
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 40px;"  id="cardSorting">
+                            <h3>3.4 Card Sorting </h3>
+                            <div class="col-xs-6" style="margin-bottom: 0px; text-align: left;padding-top: 40px;">
+                            <p><b>To understand users' concept model as well as their language</b> to build the information architecture of our app we decided to do a card sorting.</p>
+                            <p>According to the result, we created the information structure as below.
+                            <ul>
+                                <li><b>Log in:</b> Log in with social media account (e.g.Facebook)</li>
+                                <li><b>Roulette:</b> Pick up a new food, Try another one</li>
+                                <li><b>Friends:</b> Recommend foods to your Friends, Receive recommendations from friends, Reply to your friends (Positive/ Neutral/ Negative feedback)</li>
+                                <li><b>Restaurant:</b> Try a food from a specific restaurant (Restaurants’ name, overall price, review, emoji rating, category, open hour, location, menu, food details, ordering procedure and etc.)</li>
+                                <li><b>Foods:</b> Try a food from a specific restaurant (Restaurants’ name, overall price, review, emoji rating, category, open hour, location, menu, food details, ordering procedure and etc.)</li>
+                                <li><b>Profile:</b> Customize avatar, Display points &amp; progress info, Wish lists, Tried history, Diet restriction/ Allergies/ Food preference</li>
+                            </ul>
+                            </p>                                
+                            </div>
+                            <div class="col-xs-6" style="margin-bottom: 0px; text-align: left;padding-top: 40px;">
+                            <img src="photos/cardSorting.png" style="width: 100%;"> 
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 40px;"  id="paperPrototype">
+                            <h3>3.5 Paper Prototype &amp; preliminary usability testing</h3>
+                            <p>When designing the prototype we felt it difficult to decide skeleton. On one hand, we wanted to focus on the gamification idea therefore fold the other features with a hamburger menu. On the other hand, we worried about it would cause confusion for users to orient themself. So we decided to use paper prototype to figure it out.<br></p>
+                            <img src="photos/paperPrototype.png" style="width: 100%;">  
+                        </div>
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 20px;"  id="prototype">
+                            <h3>3.6 Prototype </h3>
+                            <p>Based on the pilot test with the paper prototype we refined the app structure and developed the horizontal prototype.</p>
+                            <iframe width="438" height="930" src="https://invis.io/BG9LCSKZQ" frameborder="0" allowfullscreen></iframe> 
+                        </div>
                     </div>
                 </div>
-                <!-- End drawer scroll area -->
-            </aside>
-            <!-- End drawer -->
+                <!-- /.row -->
+
+                <div class="row" style="padding-top: 40px;" id="evaluation">
+                    <div class="col-xs-12">
+                        <div class="section-title st-center">
+                            <p>4 Evaluation</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="benchmarkTask">
+                            <h3>4.1 Benchmark Task </h3>
+                            <div>
+                            <p>The tasks for formal evaluation are designed in correspond to our users’ needs, our concept of gamification, as well as to test the overall interaction flow the current prototype supports. We use both objective and subjective reaction metrics to measure the usability.<br>
+                            <div class="col-xs-8 col-xs-offset-2" style="text-align: left;">
+                            <b>Task performance metrics:</b>
+                            <ul>
+                                <li>Task success rate: whether users successfully complete the task</li>
+                                <li>Task time: time taken for completion</li>
+                                <li>Errors: inefficient clicks or actions</li>
+                                <li>Learnability: performance improvement over time</li>
+                            </ul>
+                            <b>Subjective reaction metrics:</b><br>
+                            <ul>
+                                <li>Overall Usability (e.g. Rate for questions prepared for it like "I think that I would like to use this system frequently".)</li>
+                                <li>Overall Engagement (e.g. Rate for questions prepared for it like "The screen layout of the app is visually pleasing".)</li>
+                            </ul>
+                            </div>
+                            </p>
+                            <div class="col-xs-10 col-xs-offset-1">
+                            <img src="photos/benchmarkTask.png" style="width: 70%; ">
+                            </div>
+                        
+                        </div>
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;"  id="findings">
+                            <h3>4.2 Findings </h3>
+                            <p>Through the evaluation session of 4 participants, we found users value 3 functions most: the roulette, ordering procedure and the friends’ interaction. We rated each issue based on its severity, its impact on the three key functions.</p>
+                            <img src="photos/findings.png" style="width: 80%; ">
+                        </div>                              
+                    </div>  
+
+                    <div class="col-xs-12">
+                        <div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;"  id="designImprovements">
+                            <h3>4.3 Design Improvements </h3>
+                            <p>Based on partcipants' feedback we came up with solution of the problems above as well as some new wanted features. </p>
+                            <div class="col-xs-10 col-xs-offset-1">
+                            <img src="photos/designImprovements.png" style="width: 100%;">  
+                            </div>
+                            <div class="col-xs-10 col-xs-offset-1" style="padding-top: 40px; padding-bottom: 60px;">
+                            <img src="photos/newFeatures.png" style="width: 100%;">
+                            </div>
+                        </div>                      
+                    </div>                          
+                </div>
+                <!-- /.row -->
+
+                <div class="row" style="padding-top: 40px;" id="reflection">
+                    <div class="col-xs-12">
+                        <div class="section-title st-center">
+                            <p>5 Reflection</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <p>We encountered many problems in the process implementing our plans like it's difficult to recruit participants for our contexual interviews, gathere enough data for the survey analysis, etc. However, the biggest challenge for me is to implement our evaluation plan during the Thanksgiving Week (tt that time I am the team leader). Every team member has a plan for the holiday so we even can't meet each other. I have to urge everyone and schedule everything in an early date which sort of lead to a discountable result of the preliminary testing - we only do 2 sessions. </p>
+                                <img src="photos/project01Poster.png" style="width: 100%; " id="poster">                                    
+                            </div>                          
+                        </div>
+                    </div>  
+                </div>
+                <!-- /.row -->
 
 
-		<div class="container"  style="padding-left: 240px; height: 100%; width: 100%; z-index: -100 ; ">
-            <!-- Header -->
-            <!-- End header -->	        
+                <footer class="site-footer" style="background-color: #4ecdc4; color: #4c4c4c; " id="reflection">
+                    <div class="container">
+                        <div class="row" id="contact" style="padding: 20px;">
+                            <div class="col-xs-12 col-sm-3 col-sm-offset-1" style="padding-top: 20px; ">
+                                <h3 style="margin: 0px;">Contact</h3>
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-sm-offset-1" style="">
+                                <p><i class="fa fa-phone"></i> (404) 310 5048 &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope"></i> zhonghe.wen@gatech.edu&nbsp;&nbsp;&nbsp;&nbsp;<a class="fa fa-linkedin" href="https://www.linkedin.com/in/zhonghe-wen-2b308b9a"></a>  Zhonghe Wen</p>
+                            </div>
 
-            <section id="overview">
-				<div class="container">
-					<div class="row" style="padding-top: 40px;">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" style="text-align: center;">
+                                <p>&copy; 2017. Designed by Zhonghe Wen</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
-						<div class="col-xs-12" >
-							<div class="section-title st-center">
-								<p >1 OVERVIEW</p>
-							</div>
-						</div>
-						<div class="row col-xs-10 col-xs-offset-1 ">
-							<div class="faq" style="text-align: center; margin-bottom: 0px; ">
-								<h3>Problem Space</h3>
-								<ul class="col-xs-offset-1" style="text-align: left;">
-								<li>Have you ever tried to order some unfamiliar foods at restaurants but found it awful?</li>
-								<li>Have you ever listened carefully to the server's introduction to a special dish but still be confused about the taste?</li>
-								<li>Have you ever ordered a famialiar dish but found it tastes completely different compared to your memory?</li>
-								<li>Or have you ever found it difficult to make a choice facing so many choices? etc.</li></ul>
-								<p>We are trying to help international students understand the process of deciding and ordering foods at the on-campus restaurants. Also, help them fight food neophobia and increase their willingness to try out new and novel foods based on their dietary restriction, preference and their friends’ recommendation.</p>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="col-xs-5 col-xs-offset-1">
-								<p></p>
-								<img src="photos/problemAreas.png" style="width: 90%;">
-							</div>
-							<div class="faq col-xs-6" style="margin-bottom: 0px;">
-								<h3>Target User</h3>
-								<p>Our target users are international students who are:
-								<ul>								
-								<li>English is a 2nd+ language</li> 
-								<li>Unfamiliar with American food choices</li>
-								<li>New to America (less than one year)</li>
-								<li>Wish to avoid public embarrassment</li>
-								<li>Would like to try new foods</li>
-								</ul>
-								</p>
-							</div>							
-						</div>						
-						<div class="col-md-12">
-							<div class="faq col-xs-5 col-xs-offset-1" style="margin-bottom: 0px; text-align: right;">
-								<h3>Duration</h3>
-								<p>Sept.2016 - Dec.2016</p>							
-								<h3>Team</h3>
-								<p>Zhonghe Wen, Yiran Ma, Phillip Roberts<br> Mahesh Ramesh Kumar</p>
-								<h3>Plan &amp; My Role</h3>
-								<p>Shown in the right diagram</p>
-								<h3>Links</h3>
-								<p><a href="#prototype">Prototype</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#poster">Poster</a> </p>
-							</div>							
-							<div class="faq col-xs-5"  style="margin-bottom: 0px; padding-top: 28px;">
-								<a href="zhonghewen.github.io/photos/roleDescription.png"><img src="photos/roleDescription.png" style="width: 100%"></a>									
-							</div>
-						</div>
-					</div>         
-	        </section>
+            </div>
+            <!-- /.container-fluid -->
 
-	        <section id="research">
-				<div class="container">
-					<div class="row" style="padding-top: 40px;">
-						<div class="col-xs-12">
-							<div class="section-title st-center">
-								<p>2 RESEARCH</p>
-							</div>
-						</div>
+        </div>
+        <!-- /#page-wrapper -->
 
-						<div class="col-xs-12">
-							<div class="col-xs-5 col-xs-offset-1">
-								<p></p>
-								<img src="photos/taskAnalysis.png" style="width: 100%; border: 1px solid grey;">
-							</div>
-							<div class="faq col-xs-6" style="margin-bottom: 0px;" id="observation">
-								<h3 id="observation">2.1 Observation </h3>
-								<p>For <b>better understand the problem</b> area we did four 30-minute natural observations in different campus restaurants, observing international students': oral communication with the server, body language, facial expressions, etc.<br>
-								Through the observation, we somewhat confirmed our problem area. <b>However, what are reasons behind their behaviors? </b>
-								</p>
-								<h3 id="taskAnalysis">2.2 Task Analysis &amp; 2.3 Contexual Interview</h3>
-								<p> <b>To get the key insights</b> we decided to conduct task analysis (to understand the specific steps of ordering therefore better prepare for the interviews) and contexual interviews. <br>
-								The task analysis is shown in the left diagram. <i>It varies according to the dining place.</i><br>
-								Then we did 9 contexual interviews and post session interviews, wrote user profiles &amp; affinity notes used for affinity mapping to get the insights.</p>
-							</div>
-						</div>
+    </div>
+    <!-- /#wrapper -->
 
-						<div class="col-xs-12">
-							<div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;" id="affinityMapping">
-								<h3>2.4 Affinity Mapping</h3>
-								<p>The pictures below shows the process of affinity mapping. And finally we found that:
-								<div class="col-xs-8 col-xs-offset-2" style="text-align: left;">
-								<ol>
-									<li>People prefer familiar flavor but at the same time is open-minded to new foods.</li>
-									<li>People value their friend's opinions.</li>
-									<li>People have difficulties understanding the menu/ordering process.</li>
-								</ol></p>
-								</div>
-								<img src="photos/affinityMapping.png" style="width: 30%">								
-								<img src="photos/affinityMapping2.png" style="width: 30%">
-								<img src="photos/affinityMappingResults.png" style="width: 30%">
-							</div>
-						</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-						<div class="col-xs-12" style="padding-top: 40px;">
-							<div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px;padding-top: 20px; text-align: center;" id="survey">
-								<h3>2.5 Survey</h3>
-								<p><b>To validate the insights from affinity mapping</b> we choose to conduct a survey on it which was released on Quatrics and got 60 effective responses. Results showed that the top 3 concerns for foods are price, flavor and friends' recommendation. And here are some important statistics about it.</p>
-								<div class="col-xs-7 col-xs-offset-3" style="text-align: left;">
-								<ul>								
-									<li>53/60 Try new food because of recommendation from friends</li>
-									<li>51/60 Like to try new food</li>
-									<li>32/60 Need more than moderate help on dining</li> 
-								</ul>									
-								</div>
-														
-							</div>							
-							<!--<div class="faq col-xs-5"  style="margin-bottom: 0px; padding-top: 40px; ">
-								<img src="photos/surveyData.png" style="width: 90%">										
-							</div>-->
-						</div>	
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-						<div class="col-xs-12">
-							<div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;" id="persona">
-								<h3>2.6 Persona</h3>
-								<p>Based on the statistics from our survey we created three personas, Yan, Ram and Pablo, <b>to guide our design</b>. Among the three personas Yan is our major persona. The details are shown in the diagram below.</p>
-								<p><img src="photos/persona1.png" style="width: 60%">&nbsp;<br>	</p>						
-								<p><img src="photos/persona2.png" style="width: 60%">&nbsp;<br></p>
-								<p><img src="photos/persona3.png" style="width: 60%">&nbsp;<br></p>
-							</div>
-						</div>					
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
 
-					</div> 	        		
-	        </section>
+</body>
 
-	        <section id="design">
-				<div class="container">
-					<div class="row" style="padding-top: 40px;">
-						<div class="col-xs-12">
-							<div class="section-title st-center">
-								<p>3 DESIGN</p>
-							</div>
-						</div>
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;"  id="brainStorming">
-								<h3>3.1 BrainStorming </h3>
-							</div>	
-							<div class="faq col-xs-10 col-xs-offset-1" style="text-align: center;">
-								<p>To generate more creative ideas we adopted brainstorming, encouraging and inspiring each other for several iterations. and finaly got 40 amazing ideas.</p>
-								<img src="photos/brainStorming1.png" style="width: 40%; ">
-								<img src="photos/brainStorming2.png" style="width: 50%; ">
-							</div>
-						</div>	
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="convergence" >
-								<h3>3.2 Convergence &amp; 3.3 Major Ideas</h3>
-								<p>Apparently we can't use all the 40 ideas within our app although all of them are creative and interesting. So we voted every idea for its feasibility and impact based on our user needs and finally got 3 major ideas. </p>
-								<div class="col-xs-4">
-								<p>Encourage users to try new food in a game environment. It will randomly assign the user a high ranking/ rating food. </p>
-								<img src="photos/designIdea1.png" style="width: 80%;">
-								</div>
-								<div class="col-xs-4">
-								<p>Make use of google glass to provide real time information of food. Avoid the embarrasement of blocking the line.</p>
-								<img src="photos/designIdea2.png" style="width: 100%;">								
-								</div>
-								<div class="col-xs-4">
-								<p>Recommend foods based on the user’s preference and matched with people with similar taste in food.</p>
-								<img src="photos/designIdea3.png" style="width: 100%;">
-								</div>
-								<p>We also had an in-class design sprint session, letting our classmates vote for their favorite (green dots), confused (blue dots), neutral ideas (yellow dots). </p>
-								<div class="col-xs-4">
-								<img src="photos/designSprint1.png" style="width: 100%;">	
-								</div>
-								<div class="col-xs-4">															
-								<img src="photos/designSprint2.png" style="width: 100%;">
-								</div>
-								<div class="col-xs-4">															
-								<img src="photos/designSprint3.png" style="width: 100%;">
-								</div>	
-								<p>Based on these feedback, we reevaluate these ideas and decided the final idea, gamification.</p>
-
-							</div>						
-						</div>
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 40px;"  id="cardSorting">
-								<h3>3.4 Card Sorting </h3>
-								<div class="col-xs-6" style="margin-bottom: 0px; text-align: left;padding-top: 40px;">
-								<p><b>To understand users' concept model as well as their language</b> to build the information architecture of our app we decided to do a card sorting.</p>
-								<p>According to the result, we created the information structure as below.
-								<ul>
-									<li><b>Log in:</b> Log in with social media account (e.g.Facebook)</li>
-									<li><b>Roulette:</b> Pick up a new food, Try another one</li>
-									<li><b>Friends:</b> Recommend foods to your Friends, Receive recommendations from friends, Reply to your friends (Positive/ Neutral/ Negative feedback)</li>
-									<li><b>Restaurant:</b> Try a food from a specific restaurant (Restaurants’ name, overall price, review, emoji rating, category, open hour, location, menu, food details, ordering procedure and etc.)</li>
-									<li><b>Foods:</b> Try a food from a specific restaurant (Restaurants’ name, overall price, review, emoji rating, category, open hour, location, menu, food details, ordering procedure and etc.)</li>
-									<li><b>Profile:</b> Customize avatar, Display points &amp; progress info, Wish lists, Tried history, Diet restriction/ Allergies/ Food preference</li>
-								</ul>
-								</p>								
-								</div>
-								<div class="col-xs-6" style="margin-bottom: 0px; text-align: left;padding-top: 40px;">
-								<img src="photos/cardSorting.png" style="width: 100%;">	
-								</div>
-							</div>
-						</div>	
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 40px;"  id="paperPrototype">
-								<h3>3.5 Paper Prototype &amp; preliminary usability testing</h3>
-								<p>When designing the prototype we felt it difficult to decide skeleton. On one hand, we wanted to focus on the gamification idea therefore fold the other features with a hamburger menu. On the other hand, we worried about it would cause confusion for users to orient themself. So we decided to use paper prototype to figure it out.<br></p>
-								<img src="photos/paperPrototype.png" style="width: 100%;">	
-							</div>
-						</div>	
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center;padding-top: 20px;"  id="prototype">
-								<h3>3.6 Prototype </h3>
-								<p>Based on the pilot test with the paper prototype we refined the app structure and developed the horizontal prototype.</p>
-								<iframe width="438" height="930" src="https://invis.io/BG9LCSKZQ" frameborder="0" allowfullscreen></iframe>	
-							</div>
-						</div>
-
-					</div>
-				</div>        	
-	        </section>
-
-	        <section id="evaluation">
-				<div class="container">
-					<div class="row" style="padding-top: 40px;">
-						<div class="col-xs-12">
-							<div class="section-title st-center">
-								<p>4 Evaluation</p>
-							</div>
-						</div>
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="benchmarkTask">
-								<h3>4.1 Benchmark Task </h3>
-								<div>
-								<p>The tasks for formal evaluation are designed in correspond to our users’ needs, our concept of gamification, as well as to test the overall interaction flow the current prototype supports. We use both objective and subjective reaction metrics to measure the usability.<br>
-								<div class="col-xs-8 col-xs-offset-2" style="text-align: left;">
-								<b>Task performance metrics:</b>
-								<ul>
-									<li>Task success rate: whether users successfully complete the task</li>
-									<li>Task time: time taken for completion</li>
-									<li>Errors: inefficient clicks or actions</li>
-									<li>Learnability: performance improvement over time</li>
-								</ul>
-								<b>Subjective reaction metrics:</b><br>
-								<ul>
-									<li>Overall Usability (e.g. Rate for questions prepared for it like "I think that I would like to use this system frequently".)</li>
-									<li>Overall Engagement (e.g. Rate for questions prepared for it like "The screen layout of the app is visually pleasing".)</li>
-								</ul>
-								</div>
-								</p>
-								<div class="col-xs-10 col-xs-offset-1">
-								<img src="photos/benchmarkTask.png" style="width: 70%; ">
-								</div>
-							
-							</div>
-						</div>	
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;"  id="findings">
-								<h3>4.2 Findings </h3>
-								<p>Through the evaluation session of 4 participants, we found users value 3 functions most: the roulette, ordering procedure and the friends’ interaction. We rated each issue based on its severity, its impact on the three key functions.</p>
-								<img src="photos/findings.png" style="width: 80%; ">
-							</div>								
-						</div>	
-
-						<div class="col-xs-12">
-							<div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; padding-top: 40px;"  id="designImprovements">
-								<h3>4.3 Design Improvements </h3>
-								<p>Based on partcipants' feedback we came up with solution of the problems above as well as some new wanted features. </p>
-								<div class="col-xs-10 col-xs-offset-1">
-								<img src="photos/designImprovements.png" style="width: 100%;">	
-								</div>
-								<div class="col-xs-10 col-xs-offset-1" style="padding-top: 40px; padding-bottom: 60px;">
-								<img src="photos/newFeatures.png" style="width: 100%;">
-								</div>
-							</div>						
-						</div>							
-					</div>
-				</div> 
-	        </section>
-
-	        <section class="" id="reflection">
-				<div class="container">
-					<div class="row" style="padding-top: 40px;">
-						<div class="col-xs-12">
-							<div class="section-title st-center">
-								<p>5 Reflection</p>
-							</div>
-						</div>
-
-						<div class="col-xs-12">
-							<div div class="faq col-xs-10 col-xs-offset-1" style="margin-bottom: 0px; text-align: center; "  id="">
-								<div class="col-xs-10 col-xs-offset-1">
-									<p>We encountered many problems in the process implementing our plans like it's difficult to recruit participants for our contexual interviews, gathere enough data for the survey analysis, etc. However, the biggest challenge for me is to implement our evaluation plan during the Thanksgiving Week (tt that time I am the team leader). Every team member has a plan for the holiday so we even can't meet each other. I have to urge everyone and schedule everything in an early date which sort of lead to a discountable result of the preliminary testing - we only do 2 sessions. </p>
-									<img src="photos/project01Poster.png" style="width: 100%; " id="poster">									
-								</div>							
-							</div>
-						</div>	
-					</div>
-				</div>
-	        </section>
-
-		</div>
-
-		<footer class="site-footer" style="padding-left: 240px; background-color: #4ecdc4; color: #4c4c4c; padding-top: 40px">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6">
-						<h3>Contact</h3>
-					</div>
-					<div class="col-xs-6" style="text-align: left;">
-						<p><i class="fa fa-phone"></i> (404) 310 5048<br>
-						<i class="fa fa-envelope"></i> zhonghe.wen@gatech.edu<br>
-                        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/zhonghe-wen-2b308b9a" style="color: #4c4c4c;"></a>  Zhonghe Wen</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						&copy; 2017. Designed by Zhonghe Wen
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/jquery.stellar.js"></script>
-		<script src="js/jquery.appear.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.countTo.js"></script>
-		<script src="js/jquery.shuffle.modernizr.js"></script>
-		<script src="js/jquery.shuffle.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/script.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-90435501-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>		
-	</body>
 </html>
