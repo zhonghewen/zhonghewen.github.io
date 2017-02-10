@@ -3,9 +3,9 @@ Project: Vortex
 Version: 1.0.4
 ------------------------------------------------------------------ */
 
-@import url("http://fonts.googleapis.com/css?family=Dosis");
-@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400italic");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700');
 
 /* ------------------------------------------------------------------
 General Styles
@@ -174,9 +174,9 @@ blockquote.serif-quote {
 }
 
 .font-alt {
-	font-family: "Dosis", sans-serif;
+	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 
 .font-serif {
@@ -196,7 +196,7 @@ Forms
 .form-control {
 	border: 2px solid #eee;
 	height: 33px;
-	font-family: "Dosis", sans-serif;
+	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
@@ -1269,7 +1269,7 @@ Navigation
 }
 
 #nav > li > a {
-	font-family: "Dosis", sans-serif;
+	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 24px;
@@ -2107,7 +2107,7 @@ Responsive Media Querries
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 767px) {
 
 	/* Side and overlay nav */
 	.overlay-menu.active {
@@ -2128,6 +2128,12 @@ Responsive Media Querries
 		width: 100%;
 	}
 
+}
+
+@media (min-width: 768px) {
+	#icons-navbar {
+		display:none;
+	}
 }
 
 @media (max-width: 767px) {
