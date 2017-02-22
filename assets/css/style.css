@@ -160,7 +160,7 @@ h6, .h6 {
 }
 
 p, ol, ul, blockquote {
-	margin: 0 0 20px;
+	margin: 20px 0px 20px;
 }
 
 blockquote {
@@ -1686,6 +1686,33 @@ Blog
 	margin: 0 0 10px;
 }
 
+/*project page */
+
+.project-section-subtitle {
+	font-size: 12px;
+	color: #f1cdc1;
+}
+
+.project-section-title{
+	border-bottom: 1px solid #eee;
+	padding: 0 0 20px;
+	color: #ebbaab;
+	font-weight: 800;
+
+}
+
+.project-nav-title {
+
+}
+
+.project-nav-subtitle {
+
+}
+
+.project-nav-text {
+
+}
+
 .post-header {
 	margin: 0 0 20px;
 }
@@ -1831,12 +1858,16 @@ Widgets
 
 .widget {
 	margin: 0 0 60px;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 2px;
+	z-index: 100;
 }
 
 .widget-title {
 	border-bottom: 1px solid #eee;
 	padding: 0 0 10px;
-	margin: 0 0 20px;
+	margin: 23px 0px 10px 0px;
+	color: #ebbaab;
 }
 
 .widget ul {
@@ -1845,10 +1876,20 @@ Widgets
 	margin: 0;
 }
 
-.widget li {
-	padding-bottom: 10px;
+.subtitle-padding {
+	padding: 10px 0px 10px;
 }
 
+.widget-subtitle  {
+	font-size: 12px;
+	color: #f1cdc1;
+}
+
+.widget ul li a {
+	position: relative;
+    display: block;
+    padding: 0px 0px;
+}
 /* Search */
 
 .search-box {
@@ -2134,6 +2175,11 @@ Responsive Media Querries
 	#icons-navbar {
 		display:none;
 	}
+
+
+	.affix {
+	    top:100px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -2306,3 +2352,5 @@ Multi-columns-row
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 
 }
+
+
