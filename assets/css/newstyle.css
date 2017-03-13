@@ -1,0 +1,159 @@
+/* ------------------------------------------------------------------
+Project: Zhonghe Wen's Website
+Version: 3.0
+------------------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300|Roboto:300')
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700');
+
+
+/* ------------------------------------------------------------------
+loader
+------------------------------------------------------------------- */
+
+.page-loader {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 9998;
+}
+
+.loader {
+	background: #ddd;
+	position: absolute;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	left: 50%;
+	top: 50%;
+	margin: -20px 0 0 -20px;
+	text-indent: -9999em;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+	        animation: ball-scale 1s 0s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes ball-scale {
+
+	0% {
+		-webkit-transform: scale(0);
+		   -moz-transform: scale(0);
+		    -ms-transform: scale(0);
+		     -o-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+
+}
+
+@keyframes ball-scale {
+
+	0% {
+		-webkit-transform: scale(0);
+		   -moz-transform: scale(0);
+		    -ms-transform: scale(0);
+		     -o-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+
+}
+
+
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------ */
+
+
+body {
+	background: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: 1px;	
+	overflow-x: hidden;
+	-ms-overflow-style: scrollbar;
+}
+
+img {
+	width: 100%;
+}
+
+iframe {
+	border: 0;
+}
+
+/* ------------------------------------------------------------------
+Selection
+------------------------------------------------------------------ */
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+::-webkit-selection {
+	background: #000;
+	color: #fff;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+/* ------------------------------------------------------------------
+Project Page
+------------------------------------------------------------------ */
+
+.project-section-title{
+	font-size: 24px;
+	padding: 40px 0px 20px;
+	color: #F5574B;
+	font-weight: 800;
+	text-align: center;
+}
+
+.project-section-subtitle {
+	font-size: 16px;
+	font-weight: 600;
+	color: #243146;
+}
+
+.side-bar-title {
+
+}
+
+.side-bar-subtitle {
+
+}
+
+.side-bar-item {
+
+}
