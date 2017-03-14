@@ -1792,7 +1792,18 @@ Blog
 	text-align: center;
 }
 
-.resume-subtitle {
+.resume-title1 {
+	font-size: 24px;
+
+}
+
+.resume-title2 {
+	font-size: 16px;
+	color: #243146;
+	font-weight: 600;
+}
+
+.resume-title3 {
 	font-weight: 400;
 }
 
