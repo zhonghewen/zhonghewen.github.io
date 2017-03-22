@@ -1514,13 +1514,13 @@ Works item
 }
 
 .work-title {
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	margin: 6px 0 6px;
 }
 
 .work-descr {
-	font-size: 11px;
+	font-size: 14px;
 	color: rgba(255, 255, 255, 0.75);
 }
 
@@ -1731,6 +1731,10 @@ Blog
 	width: 80%;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+span {
+	color: #F5574B;
 }
 
 .project-nav-title {
