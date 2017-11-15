@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Zhonghe Portfolio">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,418 +8,420 @@
 	
 	<title>Zhonghe Wen</title>
 	
-	<link rel="shortcut icon" href="photos/ZhongheLogoSmall.png">
-
+	<link rel="shortcut icon" href="images/ZhongheLogoSmall.png">
+	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- Plugins -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-	<link href="assets/css/magnific-popup.css" rel="stylesheet">
-	<link href="assets/css/owl.carousel.css" rel="stylesheet">
-	<link href="assets/css/superslides.css" rel="stylesheet">
-	<link href="assets/css/vertical.css" rel="stylesheet">
-	<link href="assets/css/animate.css" rel="stylesheet">
 	
 	<!-- Template core CSS -->
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script type="text/javascript">
+		window.onload = function(){
+	    setTimeout(function(){
+	    var loader = document.getElementsByClassName("page-loader")[0];
+	    loader.className="loader fadeout" ;//使用渐隐的方法淡出loading page
+	    setTimeout(function(){loader.style.display="none"},2000)
+	    },2000)//强制显示loading page 1s
+	}
+	</script>
 </head>
+
+
 <body>
+<div class="WRAPPER">
 
 	<!-- PRELOADER -->
-	<div class="page-loader">
-		<div class="loader">Loading...</div>
-	</div>
-	<!-- /PRELOADER -->
-
-	<!-- OVERLAY MENU -->
-	<div id="overlay-menu" class="overlay-menu">
-
-		<a href="#" id="overlay-menu-hide" class="navigation-hide"><i class="ion-close-round"></i></a>
-		
-		<div class="overlay-menu-inner">
-			<nav class="overlay-menu-nav">
-		
-				<ul id="nav">
-		
-					<li class="slidedown">
-						<a href="index.html">HOME</a>
-					</li>
-
-					<li><a href="index.html#portfolio">PORTFOLIO</a></li>
-		
-					<li class="slidedown"><a href="index.html#resume">RESUME</a></li>
-		
-					<li class="slidedown"><a href="index.html#contact">CONTACT</a></li>
-		
-		
-				</ul>
-		
-			</nav>
+	<div class="page-loader" >
+		<div class="loader">
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
 		</div>
-		
-		<div class="overlay-navigation-footer">
-		
-			<div class="container">
-		
-				<div class="row">
-		
-					<div class="col-sm-12 text-center">
-						<p class="copyright font-alt m-b-0">© 2017 Zhonghe Wen, All Rights Reserved.</p>
-					</div>
-		
-				</div>
-		
-			</div>
-		
-		</div>
+	</div> 
+	<!-- /PRELOADER -->	
 
-	</div>
-	<!-- /OVERLAY MENU -->
 
 	<!-- WRAPPER -->
-	<div class="wrapper">
-
+	<div class="main-body">
 		<!-- NAVIGATION -->
-		<nav class="navbar navbar-custom navbar-transparent navbar-light navbar-fixed-top">
-
-			<div class="container">
-			
-				<div class="navbar-header">
-					<!-- YOU LOGO HERE -->
-					<a class="navbar-brand" href="index.html">
-						<!-- IMAGE OR SIMPLE TEXT -->
-						<img src="photos/ZhongheLogoBlack.png" width="95" alt="ZhongheLogo">
-					</a>
-				</div>
-			
-				<!-- ICONS NAVBAR -->
-				<ul id="icons-navbar" class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#" id="toggle-menu" class="show-overlay" title="Menu">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</a>
-					</li>
-				</ul>
-				<!-- /ICONS NAVBAR -->
-			
-				<ul class="extra-navbar nav navbar-nav navbar-right">
-					<li><a href="index.html" title="Home">Home</a></li>
-					<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
-					<li><a href="#resume" title="Resume">Resume</a></li>
-					<li><a href="#contact" title="Contact">Contact</a></li>
-				</ul>
-			
+		<header class="left-bar">
+			<div class="padding-top">
+				<img src="images/ZhongheLogo.png" width="100%">
 			</div>
 
-		</nav>
+			<div class="social-link">
+				<div class="padding-bottom">
+					<ul class="non-bullet-ul">
+						<li><a href="https://www.linkedin.com/in/zhonghewen"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 		<!-- /NAVIGATION -->
 
-		<!-- HERO -->
-		<section class="module-small p-b-0">
 
-			<!-- HERO TEXT -->
-			<div class="container">
+		<!-- CONTENTS -->
+		<div class="main-content" ng-controller="previewController">
 
-				<div class="row">
-					<div class="col-sm-12 text-left" style="padding: 70px 0px 0px ;">
-						<h1 class="mh-line-size-3 m-b-20" style="letter-spacing: 2px; font-size: 36px;">HI! I AM ZHONGHE, A UX DESIGNER WITH FRONT-END SKILLS.</h1>
-						<p  >
-						I am always curious about the world and enjoy discovering problems/designing creative solutions. At present, I design for ongoing projects regarding <span>data visualization</span> of new housing and <span>service design of Walmart</span>. I have so many interesting ideas for them and try to update them here soon.<br>
-						As for my experience, I worked for a <span>B2B company</span>, refining design of their software. And I had <span>real-world</span> experience communicating with developers and product manager, designing web pages of the order management system. <br>
-						If this looks like a fit for you, please feel free to <span><a href="#contact">contact</a></span> me.
-						</p>
-					</div>
+			<!-- TIMELINE -->
+			<div class="timeline">
+				<div class="timeline-title">
+					<p class="home-title">Hi, I’m Zhonghe!</p>
+					<p class="content-title">A UX designer with curiosity of the world and passion to solve problems.</p>
 				</div>
 
+				<div class="projects" id="projectNav">
+					<div class="content-title">PROJECTS</div>
+					<ul class="non-bullet-ul">
+						<li class="project-item" ng-mouseover="setClass('potluck')" ng-class="{'activePotluck': className == 'potluck'}" >
+							<a href="" ><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
+						</li>
+						<li class="project-item" id="minibayIndex" ng-mouseover="setClass('minibay')" ng-class="{'activeMinibay': className == 'minibay'}" >
+							<a href="" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
+						</li>	
+						<li class="project-item" ng-mouseover="setClass('omniar')" ng-class="{'activeOmniar': className == 'omniar'}" >
+							<a href="" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
+						</li>										
+					</ul>
+				</div>
+
+				<div class="works">
+					<div class="content-title">WORKS</div>					
+					<ul class="non-bullet-ul">
+						<li class="project-item" ng-mouseover="setClass('adp')" ng-class="{'activeAdp': className == 'adp'}" >
+							<a href=""><p>{{work[0].brief}}</p><span>&nbsp; {{work[0].duration}}</span></a>
+						</li>
+						<li class="project-item" ng-mouseover="setClass('host')" ng-class="{'activeHost': className == 'host'}" >
+							<a href=""><p>{{work[1].brief}}</p><span>&nbsp; {{work[1].duration}}</span></a>
+						</li>	
+						<li class="project-item" ng-mouseover="setClass('camore')" ng-class="{'activeCamore': className == 'camore'}" >
+							<a href="" ><p>{{work[2].brief}}</p><span>&nbsp; {{work[2].duration}}</span></a>
+						</li>
+					</ul>
+				</div>			
 			</div>
-			<!-- /HERO TEXT -->
+			<!-- /TIMELINE -->
 
-		</section>
-		<!-- /HERO -->
-
-		<!-- PORTFOLIO -->
-		<section id="portfolio" class="module">
-
-			<div class="container">
-
-				<!-- WORKS GRID -->
-				<div class="row">
-
-					<div id="works-grid" class="works-grid works-hover-w">
-
-						<!-- DO NOT DELETE THIS DIV -->
-						<div class="grid-sizer"></div>
-
-						<!-- PORTFOLIO ITEM -->
-						<div class="work-item mobile" >
-							<a href="project01.html">
-								<img src="photos/portfolio.png" alt="project01Picture">
-								<div class="work-caption ">
-									<h3 class="work-title">POTLUCK #MOBILE</h3>
-									<p></p>
-									<div class="work-descr">
-										Does it take forever to decide what to eat? Check it out.<br>
-										*Strict UCD process.
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /PORTFOLIO ITEM -->
-
-						<!-- PORTFOLIO ITEM -->
-						<div class="work-item sound">
-							<a href="project02.html">
-								<img src="photos/portfolio2.png" alt="project02Picture">
-								<div class="work-caption ">
-									<h3 class="work-title">PHET SIM #ACCESSBILITY #SOUND</h3>
-									<p></p>
-									<div class="work-descr">
-										How to improve vision-impairement students' in-class performance? Check it out.<br>
-										*Research and Evaluation
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /PORTFOLIO ITEM -->
-
-						<!-- PORTFOLIO ITEM -->
-						<div class="work-item web">
-							<a href="project03.html">
-								<img src="photos/portfolio3.png" alt="project03Picture">
-								<div class="work-caption ">
-									<h3 class="work-title">INTERNSHIP #WEB</h3>
-									<p></p>
-									<div class="work-descr">
-										Web pages design for an ecommerce company's management system.<br>
-										*Leanred how to communicate with developers and product managers here.
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /PORTFOLIO ITEM -->
-
-						<!-- PORTFOLIO ITEM -->
-						<div class="work-item service">
-							<a href="project04.html">
-								<img src="photos/portfolio4.png" alt="project04Picture">
-								<div class="work-caption ">
-									<h3 class="work-title">LOVIN' LUNCH #SERVICE</h3>
-									<p></p>
-									<div class="work-descr">
-										Service design to improve the efficiency of take-out service.<br>
-										*Planned and conducted the whole research and designed a creative solution.
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /PORTFOLIO ITEM -->
-
-						<!-- PORTFOLIO ITEM -->
-						<div class="work-item product">
-							<a href="project05.html">
-								<img src="photos/portfolio5.png" alt="project05Picture">
-								<div class="work-caption ">
-									<h3 class="work-title">DIVA #PRODUCT</h3>
-									<p></p>
-									<div class="work-descr">
-										Appearance design for a robot arm with 6 Degree of Freedom.
-									</div>
-								</div>
-							</a>
-						</div>
-						<!-- /PORTFOLIO ITEM -->
-
-
+			<!-- DETAILS -->
+			<div class="project-des">
+				<div class="project-des-item " id={{item.id}} ng-repeat="item in project" ng-style="item.mainColor" >
+					<div class="preview" >
+						<!--<p style="z-index: 1; color: white; padding: 0px;">
+						{{item.hashTag}}	</p>	-->			
+						<video src="{{item.backgroundVideo}}" width="100%" controls="controls" loop></video>	
+						<!--<img src="{{item.img}}">-->
 					</div>
-
-				</div>
-				<!-- /WORKS GRID -->
-
-				<!-- SHOW MORE -->
-				<!--
-				<div class="row m-t-70 text-center wow fadeInUp">
-					<div class="col-sm-12">
-
-						<button id="show-more" class="btn btn-block btn-lg btn-g show-more">More works</button>
-
+					<div class="description">
+						<div>
+							<p class="content-title font-alt-cap">{{item.title}}</p>	
+						</div>
+						<div>
+							<p class="font-alt-b">Story</p>
+							<p>{{item.story}}</p>
+							<p class="font-alt-b">Highlights</p>
+							<p>{{item.highlight}}</p>
+							<p class="font-alt-b">My Role</p>
+							<p>{{item.myRole}}</p>
+						</div>
+						<button class="btn" ng-style="item.buttonColor" > <a href="project01.html">{{item.button}}</a></button>
 					</div>
 				</div>
-				-->
-				<!-- /SHOW MORE -->
-
+				<div class="project-des-item " id={{item.id}} ng-repeat="item in work" ng-style="item.mainColor" >
+					<div class="preview" >
+						<a href="" id="{{item.id}}" ></a>
+						<!--<p>{{item.hashTag}}</p>-->
+						<img src="{{item.backGroundImg}}">
+					</div>
+					<div class="description" >
+						<div>
+							<p class="content-title font-alt-cap">{{item.title}}</p>	
+						</div>
+						<div>
+							<p class="font-alt-b">Overview</p>
+							<p>{{item.overview}}</p>
+							<p class="font-alt-b">Outcomes</p>
+							<p>{{item.outcomes}}</p>
+							<p class="font-alt-b">Learned</p>
+							<p>{{item.learned}}</p>
+							<p class="font-alt-b">Interesting Facts</p>
+							<p>{{item.interestingFact}}</p>							
+						</div>
+						<button class="btn" ng-style="item.buttonColor">More Details? REACH OUT TO ME!</button>
+					</div>
+				</div>		
 			</div>
-		</section>
-		<!-- /PORTFOLIO -->
+			<!-- /DETAILS -->	
 
-		<!--RESUME-->
-		<section id="resume" class="module">
-
-			<div class="container">
-
-				<!-- FILTER -->
-				<div class="row">
-					<div class="col-md-12">
-						<!-- <h2 class="tac">frequently asked questions</h2> -->
-						<div class="">
-							<h1 class="resume-title1"><span>RESUME&nbsp;<a class="fa fa-download" aria-hidden="true" href="photos/ZhongheWen_Resume.pdf"></a></span></h1>
-						</div>
-					</div>
-				</div>
-				<!-- /FILTER -->
-
-				<!-- WORKS GRID -->
-				<div class="row">
-					<div class="col-xs-12 col-sm-3 ">
-						<div class="">
-							<h5 class="resume-title2"><i class="fa fa-graduation-cap" aria-hidden="true"></i> EDUCATION</h5>
-							<p><div class="resume-title3">Human Computer Interaction,</div>
-							M.S., Georgia Institute of Technology<br> 
-							<i>Sept.2016 - May 2018 </i></p>
-							<p><div class="resume-title3">Industrial Design,</div>
-							B.E., Sichuan University<br>
-							<i>Sept.2011 - June 2015</i></p>
-						</div>
-						<div class="">
-							<h5 class="resume-title2"><i class="fa fa-wrench" aria-hidden="true"></i> SKILLS</h5>
-							<p><div class="resume-title3">DESIGN&nbsp;</div> Sketch, Photoshop, Illustrator
-							<div class="resume-title3">PROTOTYPE&nbsp;</div>InVision, Axure<br>
-							<div class="resume-title3">FRONT-END&nbsp;</div>HTML, CSS, Bootstrap, Angular JS<br>
-							<div class="resume-title3">RESEARCH&nbsp;</div>Contextual Interview, Affinity Mapping, Coding, Survey, Persona, Empathy Map, Cognitive Walkthrough, Card Sorting, Heuristic Evaluation, Usability Testing<br>
-							<div class="resume-title3">3D&nbsp;</div>3D Modeling &amp; Rendering</p>
-						</div>
-						<div class="faq">
-							<h5 class="resume-title2"><i class="fa fa-book" aria-hidden="true"></i> COURSES</h5>
-							<p>User Research Methods, <br>User-centered Design, <br>Service Design, <br>Data Visualization.</p>
-						</div>						
-					</div>
-					<div class="col-xs-12 col-sm-7 col-sm-offset-1">
-						<div class="">
-							<h5 class="resume-title2"><i class="fa fa-suitcase" aria-hidden="true"></i> JOB EXPERIENCE</h5>
-							<p><div class="resume-title3">UX Designer, Internship <br>
-							Beijing Host Co. Ltd., A B2B Company Developing Plug-in for Official Accounts on Wechat.</div>
-							<i>December 2015 - February 2016</i> <br>
-							1. Wrote the instruction manual and revised labeling of applications within Host platform.<br>
-							2. Conducted usability tests for each application and communicated with software engineers.<br>
-							3. Presented Host applications and functions to potential customers.</p>
-							<p><div class="resume-title3">UX Designer, Internship <br>
-							Beijing Camore Health &amp; Tech Co. Ltd., An Ecommerce Company Selling Prescription Drugs Online.</div>
-							<i>January 2015 - June 2015</i> <br> 
-							1. Designed all the web pages of the management system used for updating commodities, managing orders, supporting customer service, etc. <br>
-							2. Designed the mobile app pages for delivery men and designed the interaction between the mobile app and the management system.<br>
-							3. Collaborated with developers to ensure the expected effects of pages function properly.<br>
-							4. Checked debug lists and communicated with developers to fix them.</p>				
-						</div>
-						<div class="">
-							<h5 class="resume-title2"><i class="fa fa-check-circle" ></i> PROJECTS</h5>
-							<p><div class="resume-title3">MiniBay <br>
-							Integration of hardware, mobileapp, Amazon echo and tablet to provide old-age care.</div>
-							<i>January 2017 - Present </i> <br>
-							Ongoing.</p>
-							<p><div class="resume-title3">Service Design for Walmart<br>
-							Innovative concepts of improving customers' shopping experience</div>
-							<i>January 2017 - Present </i> <br>
-							Ongoing.</p>
-							<p><div class="resume-title3">DATA Vizards <br>
-							Data visualization for new housing.</div>
-							<i>January 2017 - Present </i> <br>
-							Ongoing.</p>																					
-							<p><div class="resume-title3">Potluck <br>
-							An app for international students on-campus dining issues</div>
-							<i>August 2016 - December 2016 </i> <br>
-							1. Designed and conducted research plans to understand the user needs.<br>
-							2. Brainstormed and decided the design idea based on the user needs.<br>
-							3. Prototyped design ideas with paper, Sketch and InVision.<br>
-							4. Designed and conducted usability testing.<br>
-							5. Led the team to complete final phases of the prototype &amp; evaluation.</p>
-							<p><div class="resume-title3">PhET Simulation <br>
-							Sound research and design to solve the accessibility issues of in-class educational applications.</div>
-							<i>August 2016 - December 2016</i> <br>
-							1. Designed and conducted research to understand the scenarios and the flow of PhET Simulation (simulations of physical or chemical concepts).<br>
-							2. Assisted music technology students to design sounds for simulations.<br>
-							3. Designed and conducted the evaluation plan of this project.</p>					
-						</div>
-					</div>
-				</div>
-				<!-- /WORKS GRID -->
-			</div>
-		</section>
-		<!--/RESUME-->
-
-		<!-- FOOTER -->
-		<footer class="module bg-light" id="contact">
-
-			<div class="container">
-			
-				<div class="row">
-			
-					<div class="col-sm-12">
-			
-						<ul class="social-text-links text-center m-b-20">
-							<li><a href="#"><i class="fa fa-phone"></i> (404) 310 5048</a></li>
-							<li><a href="#"><i class="fa fa-envelope"></i> zhonghe.wen@gatech.edu</a></li>
-							<li><a href="https://www.linkedin.com/in/zhonghe-wen-2b308b9a"><i class="fa fa-linkedin"></i> Zhonghe Wen</a></li>
-						</ul>
-			
-					</div>
-			
-				</div>
-			
-				<div class="row">
-			
-					<div class="col-sm-12">
-			
-						<p class="copyright text-center m-b-0">© 2017 Zhonghe, All Rights Reserved.</p>
-			
-					</div>
-			
-				</div>
-			
-			</div>
-
-		</footer>
-		<!-- /FOOTER -->
+		</div>
+		<!-- CONTENTS -->
 
 	</div>
-	<!-- /WRAPPER -->
 
-	<!-- SCROLLTOP -->
-	<div class="scroll-up">
-		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
-	</div>
+
+</div>
+
+
+	<!-- /WRAPPER -->	
+
+
 
 	<!-- Javascript files -->
-	<script src="assets/js/jquery-2.1.3.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.superslides.min.js"></script>
-	<script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.js"></script>
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script src="assets/js/packery-mode.pkgd.min.js"></script>
-	<script src="assets/js/appear.js"></script>
-	<script src="assets/js/jquery.easing.1.3.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/jqBootstrapValidation.js"></script>
-	<script src="assets/js/jquery.fitvids.js"></script>
-	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
-	<script src="assets/js/gmaps.js"></script>
-	<script src="assets/js/contact.js"></script>
-	<script src="assets/js/custom.js"></script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+    <script>
+        angular.module('Zhonghe Portfolio',[])
+        .controller('previewController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
 
-	  ga('create', 'UA-90435501-1', 'auto');
-	  ga('send', 'pageview');
+        	$scope.project = [
+        	{
+        		id: "potluck",
+        		projInd: 1,
+        		trycolor:"#EC6773",
+        		brief:"Potluck, Your on-campus dining saver | ",
+        		duration:" Aug. - Dec. 2016",
+        		mainColor: {
+        			"background-color": "#CAEBF2"
+        		},
+        		fontColor: {
+        			"color": "#3EA1B6"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#4A90E2"
+        		},
+        		hashTag:"#Strict user-centered design process",
+        		backGroundImg:"",
+        		backgroundVideo:"videos/potluckVideo.mp4",
+        		img:"images/mockup.png",
+        		title:"POTLUCK",
+        		story:"Imagine you are on a trip to Spain and would like to try out local foods. However, you couldn’t figure out which dishes are delicious so you have to randomly order something. You taste it with high expectation. BUT, it’s AWFUL! Want to check out how we solve the problem?",
+        		highlight:"Strict user-centered design process",
+        		myRole:"Lead designer; Researcher",
+        		url:"",
+        		button:"VIEW DETAILS"
+        	},
+        	{
+        		id: "minibay",        		
+        		projInd: 2,
+        		brief:"Minibay, Your inventory management helper | ",
+        		duration:"Jan. - May 2017",        		
+        		mainColor: {
+        			"background-color": "#FCE7E9"
+        		},   
+        		fontColor: {
+        			"color": "#EC6773"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#EC6773"
+        		},        		     		
+        		hashTag:"#Cross platform products #Communication with developers",
+        		backGroundImg:"",
+        		backgroundVideo:"videos/miniBayVideo.mp4",
+        		img:"",
+        		title:"MINIBAY",
+        		story:"David’s parents have been over 70 and always foget when they purchased some fresh produce. And they really want instructions on keeping a healthy diet. | David cares his parents very much. However, he is too busy to visit them regularly. He would really like to keep informed about their health condition and help them to live in a healthier diet. Want to check out how we develop a solution satisfying both the parents and the kid?",
+        		highlight:"Cross platform products; Communication with developers",
+        		myRole:"Designer of the dashboard/box prototype; Developer of the dashboard",
+        		url:"",
+        		button:"COMING SOON"        		
+        	},
+        	{
+        		id : "omniar",
+        		projInd: 3,
+        		brief:"OmniAR, AR shopping experience design for Walmart | ",
+        		duration:"Jan. - May 2017",         		
+        		mainColor: {
+        			"background-color": "#E7FCFA"
+        		},   
+        		fontColor: {
+        			"color": "#3CC1A3"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#50E3C2"
+        		},
+        		hashTag:"",
+        		backGroundImg:"",
+        		backgroundVideo:"videos/omniARVideo.mp4",
+        		img:"",
+        		title:"OmniAR",
+        		story:"Mary finds her windshield cleaner has ran out so she decides to go to the nearby Walmart to purchase it. However, when she gets there she circled 3 rounds but still couldn’t find windshield. She asks a nearby associate. But the associate is busy cleaning up the shelf and seems tired. Want to check out how we better the shoping experience?",
+        		highlight:"Real-world client; Solve problems of complicated user group",
+        		myRole:"Designer involved in research",
+        		url:"",
+        		button:"COMING SOON"        		        		
+        	}];
 
-	</script>
+
+        	$scope.work = [
+        	{
+        		id : "adp",
+        		projInd: 4,
+        		brief:"ADP, Inc., UX Design Intern | ",
+        		duration:"May - Aug. 2017",         		
+        		mainColor: {
+        			"background-color": "#FCF9E7"
+        		},   
+        		fontColor: {
+        			"color": "#E3AA50"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#E3AA50"
+        		},
+        		hashTag:"",
+        		backGroundImg:"images/adpPrev.png",
+        		backgroundVideo:"",
+        		img:"",
+        		title:"ADP",
+        		overview:"ADP offers Payroll Services, HR Software and Tax and Compliance services for businesses of all sizes. My major project there was redesigning part of the benefit center where HR annually set up the enrollment of benefit plan for their employees. The setting is always very complicated since it involves communication with various departments like the insurance company, the broker, payroll department, etc. So our goal of this iteration is to provide clear instructions on when to contact which department to get the setting going through smoothly.",
+        		outcomes:"New design of benefit center; Validation report of new design",
+        		myRole:"Designer involved in research",
+        		learned:"How to negotiate with stakeholders to understand their goal, adjusting the design satisfying both of us; 2.How to conduct user research to defend important design when facing questions from stakeholders; 3.How to read the create consistent design when there isn’t standard component;4.How to annotate design and communicate with developers.",
+        		interestingFact:"In my validation research of new design, the research tool has crushed down. Want to know how I deal with it?; A small budget left at the end of physical year, how we make use of it to prepare for future research and design?" 		
+        	},
+        	{
+        		id : "host",
+        		projInd: 5,
+        		brief:"Beijing Host Co. Ltd., UX Design Intern | ",
+        		duration:"Dec. 2015 - Feb. 2016",         		
+        		mainColor: {
+        			"background-color": "#EAEBE8"
+        		},   
+        		fontColor: {
+        			"color": "#7A8D75"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#7A8D75"
+        		},
+        		hashTag:"",
+        		backGroundImg:"images/hostPrev.png",
+        		backgroundVideo:"",
+        		img:"",
+        		title:"HOST",
+        		overview:"HOST is a company providing operation solutions for official accounts on Wechat (the most popular Chinese social platform). It helps the official account owners analyze their followers and provide high-quality contents to followers. It also develops multiple software to help official accounts owners to held online activities. However, there wasn’t clear and unified instructions on the use of these software. So my major project here was testing the user experience of our software, giving design improvement suggestions and writing instruction manual.",
+        		outcomes:" Research report of inconsistent design across software; Instruction manual of our software",
+        		myRole:"Designer involved in research",
+        		learned:"1.How to conduct quick and dirty user research within internal team when the resource is limited; 2.How important visual and language consistency is.",
+        		interestingFact:"Understand of the development of third-party company of popular social platform."		
+        	},
+        	{
+        		id : "camore",
+        		projInd: 6,
+        		brief:"Beijing Camore Health&Tech Co. Ltd., UX Design Intern | ",
+        		duration:"Jan. - May 2015",         		
+        		mainColor: {
+        			"background-color": "#F3F4FA"
+        		},   
+        		fontColor: {
+        			"color": "#5A7AB0"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#5A7AB0"
+        		},
+        		hashTag:"",
+        		backGroundImg:"images/camorePrev.png",
+        		backgroundVideo:"",
+        		img:"",
+        		title:"CAMORE",
+        		overview:"Camore is an E-commerce company providing 60-min medicine delivery service for people who encounter health issues. At the point I joined them they have developed the customer-side app but haven’t started on the employee-side medicine management system. So I started with a business flow chart and collaborate with product manager/ developers to design the information structure, prototype and the detailed web page.",
+        		outcomes:"1.Prototype of the internal management system; 2.Mobile app design of delivery men used app. (side project)",
+        		myRole:"Designer involved in research",
+        		learned:"1.How to collaborate with product manager and developer to understand the expectations and limitations, adjusting the design; 2.The structure of management system model.",
+        		interestingFact:""		
+        	}      	        	
+        	];
+
+        	$scope.className= 'potluck';
+
+        	$scope.setClass = function(className) {
+        		$scope.className = className;
+			      
+			    // set the location.hash to the id of
+			    // the element you wish to scroll to.
+			    if (className == 'potluck') {
+			    	$location.hash('potluck');
+			    	$anchorScroll();
+
+			    }
+			    else if (className == 'minibay') {
+			    	$location.hash('minibay');
+			    	$anchorScroll();
+			    }
+			    else if (className == 'omniar') {
+			    	$location.hash('omniar');
+			    	$anchorScroll();		    		    	
+			    }	
+			    else if (className == 'adp') {
+			    	$location.hash('adp');
+			    	$anchorScroll();
+			    }
+			    else if (className == 'host') {
+			    	$location.hash('host');
+			    	$anchorScroll();
+			    }
+			    else if (className == 'camore') {
+			    	$location.hash('camore');
+			    	$anchorScroll();
+			    }		    
+        	};
+
+
+        	angular.element(function() {
+				var pot = angular.element(document.getElementById("potluck")).prop('offsetTop');
+				//console.log(pot);
+
+				var mini = angular.element(document.getElementById("minibay")).prop('offsetTop');
+				//console.log(mini);
+
+				var omni = angular.element(document.getElementById("omniar")).prop('offsetTop');
+				//console.log(omni);
+
+				var adp = angular.element(document.getElementById("adp")).prop('offsetTop');
+				var host = angular.element(document.getElementById("host")).prop('offsetTop');			
+				var camore = angular.element(document.getElementById("camore")).prop('offsetTop');
+
+  				angular.element($window).bind('scroll', function(e) {
+  					$scope.$apply( function() {
+	         			var Ytop = $window.pageYOffset;
+	         			//console.log(Ytop);
+	                    if (Ytop >= pot && Ytop <= mini) {
+	                    	$scope.className = 'potluck';
+	                    }
+	                    else if (Ytop >= mini && Ytop <= omni) {
+	             	      	$scope.className = 'minibay';
+	                    }
+	                    else if (Ytop >= omni && Ytop <= adp) {
+	             	      	$scope.className = 'omniar';
+	                    } 
+	                    else if (Ytop >= adp && Ytop <= host) {
+	             	      	$scope.className = 'adp';
+	                    }
+	                    else if (Ytop >= host && Ytop <= camore) {
+	             	      	$scope.className = 'host';
+	                    }
+	                    else if (Ytop >= camore) {
+	             	      	$scope.className = 'camore';
+	                    } ;               	                                      
+  					});
+
+    			});
+
+
+    		});
+
+        		
+        	
+
+
+      	
+
+  		}]);
+
+    </script>	
+
+
+
 </body>
+
 </html>
