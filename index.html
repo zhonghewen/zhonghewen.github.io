@@ -127,7 +127,7 @@
 							<p class="font-alt-b">My Role</p>
 							<p>{{item.myRole}}</p>
 						</div>
-						<button class="btn" ng-style="item.buttonColor" > <a href="project01.html">{{item.button}}</a></button>
+						<button class="btn" ng-style="item.buttonColor" > <a href="{{item.projectLink}}">{{item.button}}</a></button>
 					</div>
 				</div>
 				<div class="project-des-item " id={{item.id}} ng-repeat="item in work" ng-style="item.mainColor" >
@@ -199,7 +199,7 @@
         		story:"Imagine you are on a trip to Spain and would like to try out local foods. However, you couldn’t figure out which dishes are delicious so you have to randomly order something. You taste it with high expectation. BUT, it’s AWFUL! Want to check out how we solve the problem?",
         		highlight:"Strict user-centered design process",
         		myRole:"Lead designer; Researcher",
-        		url:"",
+        		projectLink:"project01.html",
         		button:"VIEW DETAILS"
         	},
         	{
@@ -224,8 +224,8 @@
         		story:"David’s parents have been over 70 and always foget when they purchased some fresh produce. And they really want instructions on keeping a healthy diet. | David cares his parents very much. However, he is too busy to visit them regularly. He would really like to keep informed about their health condition and help them to live in a healthier diet. Want to check out how we develop a solution satisfying both the parents and the kid?",
         		highlight:"Cross platform products; Communication with developers",
         		myRole:"Designer of the dashboard/box prototype; Developer of the dashboard",
-        		url:"",
-        		button:"COMING SOON"        		
+        		projectLink:"project02.html",
+        		button:"VIEW DETAILS"        		
         	},
         	{
         		id : "omniar",

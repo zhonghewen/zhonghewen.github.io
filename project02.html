@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="projectPotluck">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>MiniBay</title>
+	
+	<link rel="shortcut icon" href="images/ZhongheLogoSmall.png">
+	
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Plugins -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Template core CSS -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script type="text/javascript">
+		window.onload = function(){
+	    setTimeout(function(){
+	    var loader = document.getElementsByClassName("page-loader")[0];
+	    loader.className="loader" ;//使用渐隐的方法淡出loading page
+	    setTimeout(function(){loader.style.display="none"},3000)
+	    },3000)//强制显示loading page 1s
+	}
+	</script>
+</head>
+
+<body class="main-body">
+
+	<!-- PRELOADER -->
+	<div class="page-loader">
+		<div class="loader">
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		</div>
+	</div>
+	<!-- /PRELOADER -->
+
+	<!-- OVERLAY MENU -->
+	<div id="overlay-menu" class="overlay-menu">
+
+		<a href="#" id="overlay-menu-hide" class="navigation-hide"><i class="ion-close-round"></i></a>
+		
+		<div class="overlay-menu-inner">
+			<nav class="overlay-menu-nav">
+		
+				<ul id="nav">
+		
+					<li class="slidedown">
+						<a href="index.html">HOME</a>
+					</li>
+
+					<li><a href="index.html#portfolio">PORTFOLIO</a></li>
+		
+					<li class="slidedown"><a href="index.html#resume">RESUME</a></li>
+		
+					<li class="slidedown"><a href="index.html#contact">CONTACT</a></li>
+		
+		
+				</ul>
+		
+			</nav>
+		</div>
+		
+		<div class="overlay-navigation-footer">
+		
+			<div class="container">
+		
+				<div class="row">
+		
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-alt m-b-0">© 2017 Designed and Developed by Zhonghe Wen, All Rights Reserved.</p>
+					</div>
+		
+				</div>
+		
+			</div>
+		
+		</div>
+	</div>
+	<!-- /OVERLAY MENU -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper" ng-controller="potluckController">
+
+
+
+		<!-- PROJECT MENU -->
+		<div class="project-menu" >
+
+			
+			<!-- WIDGET -->
+			<nav  >
+				<div>
+					<p><a href="index.html" style="padding-left: 10px;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;HOME</a></p>
+					<h4 class="project-menu-title">MiniBay</h4>
+
+					<div class="project-menu-des">
+					<p><span class="menu-title">Duration</span> Jan. - May 2016</p>
+					<p><span class="menu-title">Team</span> Zhonghe Wen, Yiran Ma, Xiaoxuan Wang, Jian Ruan, Yongrui Lin</p>
+					<p><span class="menu-title">My role</span> Designer and developer of the dashboard. Designer of the box prototype. Minibay is a cross platform product which is composed of a mobile app, an alexa app, a dashboard and a refrigerator prototype. It requires efficient communication between designers and developers to keep the UI style consistent and the most updated.</p>
+					</div>
+				<ul class="non-bullet-ul" >
+
+
+                    <li class="menu-title"><a href="#overview"  class="menu-title" ng-class="{'activeMenu': className == 'overview'}" >OVERVIEW</a></li>
+                    <li class="menu-subtitle"><a href="#problemSpace" ng-class="{'activeMenu': className == 'problemSpace'}">Problem Space</a></li>               
+                    <li class="menu-subtitle"><a href="#methodology" ng-class="{'activeMenu': className == 'methodology'}"> Methodology</a></li>
+                    <li class="menu-subtitle"><a href="#outcomes" ng-class="{'activeMenu': className == 'outcomes'}"> Outcomes</a></li>               
+
+                    <li class="menu-subtitle"><a href="#research" class="menu-title"  ng-class="{'activeMenu': className == 'research'}">RESEARCH</a></li>
+                    <li class="menu-subtitle"><a href="#theElderly" ng-class="{'activeMenu': className == 'theElderly'}">The Elderly</a></li>  
+                    <li class="menu-subtitle"><a href="#children" ng-class="{'activeMenu': className == 'children'}"> Children</a></li>
+
+
+
+                    <li class="menu-subtitle"><a href="#design" class="menu-title" ng-class="{'activeMenu': className == 'design'}">DESIGN</a></li>
+                    <li class="menu-subtitle"><a href="#designNeedsAndProductStructure" ng-class="{'activeMenu': className == 'designNeedsAndProductStructure'}">  Design Needs and Product Structure</a></li>
+                    <li class="menu-subtitle"><a href="#informationArchitecture" ng-class="{'activeMenu': className == 'informationArchitecture'}"> Information Architecture</a></li>
+                    <li class="menu-subtitle"><a href="#uiKit" ng-class="{'activeMenu': className == 'uiKit'}"> UI Kit</a></li>
+
+                    <li class="menu-subtitle"><a href="#designIterations" ng-class="{'activeMenu': className == 'designIterations'}">  Design Iterations</a></li>
+
+                    <li class="menu-subtitle"><a href="#currentDesign" ng-class="{'activeMenu': className == 'currentDesign'}">  Current Design</a></li> 
+
+                    <li class="menu-subtitle"><a href="#physicalPrototype" ng-class="{'activeMenu': className == 'physicalPrototype'}">  Physical Prototype</a></li> 
+
+                    <li class="menu-title"><a href="#challenges" class="menu-title" ng-class="{'activeMenu': className == 'challenges'}">Challenges</a></li>  
+
+				</ul>
+
+				</div>
+			</nav>
+
+			<!-- /WIDGET -->
+		</div>
+		<!-- /PROJECT MENU -->	
+
+		<div class="project-main">
+			<!-- Return to Top -->
+			<a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+
+			<!-- OVERVIEW -->
+			<div class="project-overview" id="overview">
+					<div class="project-content">
+                	    <h1 style="padding-top: 0px; margin-top: 0px">OVERVIEW</h1>
+						<h2 id="problemSpace">Problem Space</h2>
+                        <p>We all care about our elderly parents and grandparents. We want them to live happily and healthily. However, our own busy schedule prevents us from giving them the effective care they deserve. We are away from their everyday life. Unaware of their tastes and needs.<br>On parents’ side, they are suffering from deteriorated health condition and want to keep a healthy diet. However, they always forget when they purchase fresh produce which makes it difficult to control the food quality. They also suffered from small text, complicated design of mobile phones which are not designed for them.<br>So we propose Minibay, a system designed to connect young people and their elderly family members, delivering the quality of life through technology.</p>
+
+						<h2 id="methodology">Methodology</h2>
+						<img src="images/methodologyMiniBay.png">
+
+						<h2 id="outcomes">Outcomes</h2>
+						<h3>General Ideas</h3>
+						<p>Minibay consists of four parts, the smart refrigerator, the dashboard on a big screen, the alexa app and a mobile app used by children. 
+							<ul>
+								<li>The smart refrigerator tracks food consumption and replenishment through image recognition. It will pass on the data to our database which which be used by the dashboard displayed on a big screen and the mobile app on children’s side and. </li>
+								<li>The dashboard displays the nutrition report based on consumption status of foods in refrigerator. It also displays the freshness of foods and will recommend healthy diet based on the consumption. Or if parents have experience with voice interaction they can also choose to ask Minibay any questions relate to their food storage, nutrition status or diet recommendation. </li>
+								<li>The mobile app is used by children. They will be able to see the real-time food consumption status and the nutrition report. Even more, if children find some foods are depleted or not fresh enough they can make a shopping list and bring the foods to their parents in the next visit!</li>
+							</ul>
+						</p>
+						<p>Please watch the video to understand more about the general concept!</p>
+					</div>
+					<div class="project-content">
+						<div style="text-align: center;">
+          					<iframe width="560" height="315" src="https://www.youtube.com/embed/Ph1zUGlsgF0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          					<cite style="display: block;">Video shot by Yiran Ma. Script by Zhonghe Wen.</cite>
+          				</div>
+          				
+					</div>
+								
+					<div class="project-content">
+						<h3>Working Demo</h3>
+					</div>
+					<div class="project-content">
+						<div style="text-align: center;">
+          					<iframe width="560" height="315" src="https://www.youtube.com/embed/JdzwklFbVLM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          				</div>
+					</div>
+
+			</div>
+			<!-- /OVERVIEW -->
+
+			<!-- RESEARCH -->
+			<div class="" id="research">
+				<div class="project-content">
+            	    <h1 class="">RESEARCH</h1>
+					<div class="section-dissection">After understand the problem space how we narrow down the problem?</div>                	    
+					<p>Limited by the time frame of this project we needed to specify the user needs and design needs within one week. However, we are very different from our target user and it is difficult for us to imagine their life. So we decided to conduct interviews to understand them. Each of our team member made a call to our grandparents, asking them how they keep the inventory, what's their concerns for their health and diet, how's their experience with mobile app and their relationship with their children. We then made a storyboard to specify the scenario and major user needs. </p>
+
+					<h2 id="theElderly">The Elderly</h2>
+					<p>One group of our target User is the elderly who is over 70.</p>
+					<img src="images/targetElderly.png">
+
+					<h3>User Needs</h3>
+					<ul>
+						<li>Instructions on a healthy diet. (freshness of foods, nutrition/dishes suggestions)</li>
+						<li>The elderly friendly interface.</li>
+						<li>Connection with children.</li>
+					</ul>
+
+					<h3>Storyboard</h3>
+					<p>As seen below, Mary is enjoying reading a book. Suddenly she hears the clock ringing and realizes it is 12 P.M. She decides to have something for lunch. "Uhmm, recently I always feel tired I should pay more attention to my health." She thinks and carefully reads the nutrition report on the big screen and see she barely had any vitamins this week. So she asks Alexa to open Minibay to see what fruits she has in her refrigerator. Minibay also gives her healthy lunch suggestions based on her inventory.</p>
+					<img src="images/TheElderlyScenario.png">
+				</div>
+
+				<div class="project-reflection">
+					<p class="reflection-title">After Interviews How We Integrate Our Findings and Shape Our Product?</p>
+					<p>Semi-structured interviews always bring us overwhelming details. A common way to get key insights is affinity diagram. However, we want a more quick and dirty way which clearly explains the scenario. The first idea came to our mind was user journey map. But there wasn't standard procedure in everyone's life. So we finally decided to make storyboard. In the discussion of the story we can easily retrieve many details from interviews and the scenario makes it easier to recognize key user needs. It is also good for us to sell our ideas to the others.</p>
+				</div>	
+
+
+				<div class="project-content">
+					<h2 id="children">Children</h2>
+					<p>The other group of our target user is adult who has really busy work.</p>
+
+					<img src="images/targetChild2.png">
+
+					<h3 id="">User Needs</h3>
+					<ul>
+						<li>Assisstantance of understanding parents' life.</li>
+						<li>Connections with parents.</li>
+						<li>Easy access to the technology.</li>
+					</ul>
+
+					<h3>Storyboard</h3>
+					<img src="images/childScenario.png">
+
+				</div>
+
+			</div>
+			<!-- /RESEARCH -->
+
+			<!-- DESIGN -->
+			<div class="" id="design">
+				
+				<div class="project-content">
+            	    <h1 class="">DESIGN</h1>
+					<div class="section-dissection">We defined user needs through user research but how it guided our design?</div>
+					<h2 id="designNeedsAndProductStructure">Design Needs and Product Structure</h2>
+                    <p>In the storyboard we could clearly see we needed a dashboard + a Alexa app for parents side and a mobile app for children side. We also needed a refrigerator prototype to monitor inventory of foods and update the database. So we discussed the product structure (shown as below) and split up the work to explore the a feasible way to make it work.</p> 
+					<img src="images/systemStructure.png">
+
+					<!--<img src="images/designIdeasMinibay.png">-->
+				</div>
+
+				<div class="project-content" >
+					<h2 id="informationArchitecture">Information Architecture</h2>
+                    <p>
+                    In our team, one of my major responsibility was the dashboard design for the elderly. I started it from the user needs (instructions on a healthy diet, the elderly friendly interface and connection with children) and further listed out the functions. I also checked the generic dashboard design and decided to add general information such as time, date and weather. I added these information because this project was not just about inventory management. It was more like an exploration of scenario of smart home. The dashboard won't be a pure simple display of inventory. It is very possible to become an integrated terminal for multiple smart home apps. The general information could help user understand that there is a higher level structure.</p>
+					<img src="images/dashboardStructure.png">
+				</div>
+
+				
+				<div class="project-content">
+                    <h2 id="uiKit">UI Kit</h2>
+                    <p>When we started design we realized how important it is to have a style guide first. Each designer choosed very different font, decoration line, icons although we have discussed the design style and thought we reached a decision. We then created a UI kit which keeps the visual language consistent throughout different platfrom. <a href=""> Check Out Full Image</a> </p>
+					<img src="images/UikitSmall.png">
+				</div>	
+
+				<div class="project-content " id="designDetails">
+					<h2 id="designIterations">Design Iterations</h2>
+
+					<h3 id="originalDesign">Original Design</h3>					
+					<p>Usually I would like to create a low-fidelity wireframe before the real design. However, the function of the dashboard is very simple and our team thought we should only have one main page to efficiently display the nutrition and inventory information. So I skipped the wireframe step and started design.<br>
+					The dashboard should include four types of information: general information, nutrition, inventory and connection with children. General information is high-level information so I put them on very left. The nutrition information is the most important thing of dashboard because the elderly have suffered from impaired health condition and really take it seriously. So I put nutrition on top left and leave largest space for it. Inventory information connection info took up the rest of the page.  
+					</p>	
+					<img src="images/dashboardProblems.png">	
+
+					<h3 id="majorProblems">Major Problems</h3>
+
+					<p>After first design I did a self-evaluation based on the design guideline for the elderly and found some major problems and further improved them in the next round of design.</p>
+
+					<h4>1. Become Redundant Information after We Changed Platform </h4>
+					<p>In the original design I kept general weather information because I wanted to give user a sense of the overall structure of Minibay app and the big screen home page. However, our team finally decided to use ipad pro as the platform. So I removed it since ipad have formed its structure.</p>
+
+					<h4>2. Donut Chart Isn’t Large Enough </h4>
+					<p>The elderly suffered from the impaired vision and motion therefore elements and between space should be large enough. I enlarged the donut chart and the other major elements since I decided to display the dashboard on ipad pro, a smaller screen than we expected at the begining. I also reduced the displayed nutrients since I conducted research and found there wasn’t that many important nutrients for the elderly.</p>
+
+					<h4>3. "3 Days Left" Is Inaccurate </h4>
+					<p>In the original design there was a number indicating the days before the item expired. However, for many fresh produce there isn’t a standard expire date. Thus, I decided to use a colorful bar to indicate the freshness of the item (green-“fresh”, orange-“expiring”, red-“expired”), which is more intuitive.</p>
+
+					<h4>4. Non-essential Functions </h4>
+					<p>In our research, few participants mentioned they would like to get recipe suggestions since it’s always hard to decide what to cook for lunch or dinner. However, the space of the screen is limited after we changed the platform. So I removed the  non-essential functions due to minimalism. </p>
+
+
+                </div>  
+
+                <div class="project-content">
+					<h2 id="currentDesign">Current Design</h2>
+					<img src="images/dashboardNew.png">               	
+                </div>
+
+				<div class="project-reflection">
+					<p class="reflection-title">How to design for the elderly?</p>
+					<p>In our team, we didn't have easy access to the elderly. So I did literature review to understand how the impaired health condition affects their ipad usage. </p>
+					<p>It turned out that the elderly have a blurred vision therefore need high contrast color scheme (expecially the elderly have poor performance with blue), adjustable font size. They also suffer from declined motor skills and have difficulties to hit and move elements. It made me pay attention to the between space of the elements. </p>
+					<p>I also need to consider the elderly's life stage. They have little exprience with current technology and the learning curve could be really steep for them. Simoutaneously they suffer from the impiared memory and cognition which makes it even more difficult to learn new things. A study I read mentioned that some the ealder people even didn't know how to use scroll bar and search field. It made me decide to remove the recipe suggestion section which leaves more space for inventory list. I also intentionally made every operation visible and provide clear instructions besides those elements.</p>
+				</div>                  
+
+				<div class="project-content " id="physicalPrototype">
+					<h2 >Physical Prototype</h2>
+					<p>As the only Industrial Design background student I was also responsible for the design of the physical prototype. In the process, I needed to collaborate with one of our team member, Jian Ruan (who is responsible for Raspberry Pi + database in our team). So before I started design I communicated with Jian to understand his requirements for the prototype. The requirements are listed below.</p>
+					<ul>
+						<li>6cm x 6cm x 6cm space for Raspberry Pi.</li>
+						<li>Good lighting (which could improve the performance of computer vision).</li>
+						<li>Allow camera to capture as much view as possible.</li>
+					</ul>
+					<p>After understanding the requirements I was wondering how could I complete it efficiently since I didn't have any experience with laser cut. I went to prototyping lab and met students there, asking them how they prepare their prototype/ where they purchase the materials/ other common problems. They gave me very useful suggestions. For instance, they suggested me to laser cut a sample prototype before cutting the major materials. On one hand it could help me understand the best power setting. On the other hand it could help me adjust the parameters on blueprints, avoiding wasting material. Keeping the tips in mind I started my design process which is shown below and finally made my prototype after several tries.</p>
+
+					<h3 id="currentDesign">Design Process of Physical Prototype</h3>
+					<img src="images/pPSchedule.png">
+
+					<h3>Sketches, 3D Model and Final Prototype</h3>
+					<img src="images/physicalPrototype.png">
+                </div> 
+
+				<div class="project-reflection">
+					<p class="reflection-title">How to design with unfamiliar technology?</p>
+					<p>Before this project I didn't have any experience with lasercut or 3D printing. So when I was assigned the task I was really confused how I should tackle it. At first I started it blindly by searching box design online. It gave me an overall understanding of the appearance of the box, the common mechanical structure, accessories and materials. With this knowledge I created sketches and asked feedback from Jian since he was responsible for linking it with Raspberry Pi. We talked about the technology we were going to use and came up with requirements which helped me redesign the prototype and made design decisions. The situation is similar when I started preparing the lasercut. I didn't have experience so I understand that it is very possible that I would make some mistakes. I needed to gather as much knowledge as possible to avoid severe mistake and started it as early as possible to ensure that I have enough time to fix the mistakes.
+					<br>
+					I believe that no one can make a perfect plan when they use unfamiliar technology. But we can do research online, consult experienced people to avoid most of problems. More importantly, we should always keep it in mind that mistakes are common. We don't need to worry too much about them. Just calm down and face it whenever it cames up and believe we are smart enough to solve them.</p>
+				</div>                            
+
+			</div>
+			<!-- /DESIGN -->
+
+
+			<!-- CHALLENGES -->
+			<div class="" id="challenges">
+																					
+				<div class="project-content" style="padding-bottom: 30px;">
+            	    <h1 class=" ">challenges of the whole project</h1>
+					<div class="section-dissection">What kind of challenges we had?</div>
+					<h2></h2>
+                    <p></p>
+
+                </div>			                        			                        
+			</div>
+			<!-- /CHALLENGES -->
+
+
+			<footer>
+				<div class="">
+					<div class="miniBay"></div>
+					<div class="OmniAR"></div>
+				</div>
+				<div><p class="copyright font-alt m-b-0">© 2017 Designed and Developed by Zhonghe Wen, All Rights Reserved.</p></div>
+			</footer>			
+		</div>	
+
+
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<!-- Javascript files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90435501-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+    <script>
+        angular.module('projectPotluck',[])
+        .controller('potluckController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
+
+        	$scope.className= 'overview';
+
+        	angular.element(function() {
+				var overview = angular.element(document.getElementById("overview")).prop('offsetTop');
+				var problemSpace = angular.element(document.getElementById("problemSpace")).prop('offsetTop');
+				var methodology = angular.element(document.getElementById("methodology")).prop('offsetTop');
+				var outcomes = angular.element(document.getElementById("outcomes")).prop('offsetTop');
+
+				var research = angular.element(document.getElementById("research")).prop('offsetTop');			
+				var theElderly = angular.element(document.getElementById("theElderly")).prop('offsetTop');
+				var children = angular.element(document.getElementById("children")).prop('offsetTop');			
+
+
+				var design = angular.element(document.getElementById("design")).prop('offsetTop');			
+				var designNeedsAndProductStructure = angular.element(document.getElementById("designNeedsAndProductStructure")).prop('offsetTop');
+				var informationArchitecture = angular.element(document.getElementById("informationArchitecture")).prop('offsetTop');		
+				var uiKit = angular.element(document.getElementById("uiKit")).prop('offsetTop');
+				var designIterations = angular.element(document.getElementById("designIterations")).prop('offsetTop');		
+				var currentDesign = angular.element(document.getElementById("currentDesign")).prop('offsetTop');
+				var physicalPrototype = angular.element(document.getElementById("physicalPrototype")).prop('offsetTop');
+
+				var challenges = angular.element(document.getElementById("challenges")).prop('offsetTop');	
+
+
+  				angular.element($window).bind('scroll', function(e) {
+  					$scope.$apply( function() {
+	         			var Ytop = $window.pageYOffset;
+	         			//console.log(Ytop);
+	                    if (Ytop >= overview && Ytop <= problemSpace) {
+	                    	$scope.className = 'overview';
+	                    }
+	                    else if (Ytop >= problemSpace && Ytop <= methodology) {
+	             	      	$scope.className = 'problemSpace';
+	                    }
+	                    else if (Ytop >= methodology && Ytop <= outcomes) {
+	             	      	$scope.className = 'methodology';
+	                    } 
+	                    else if (Ytop >= outcomes && Ytop <= research) {
+	             	      	$scope.className = 'outcomes';
+	                    }
+	                    else if (Ytop >= research && Ytop <= theElderly) {
+	             	      	$scope.className = 'research';
+	                    }
+	                    else if (Ytop >= theElderly && Ytop <= children) {
+	             	      	$scope.className = 'theElderly';
+	                    }
+	                    else if (Ytop >= children && Ytop <= design) {
+	             	      	$scope.className = 'children';
+	                    }
+	                    else if (Ytop >= design && Ytop <= designNeedsAndProductStructure) {
+	             	      	$scope.className = 'design';
+	                    }  
+	                    else if (Ytop >= designNeedsAndProductStructure && Ytop <= informationArchitecture) {
+	             	      	$scope.className = 'designNeedsAndProductStructure';
+	                    }
+	                    else if (Ytop >= informationArchitecture && Ytop <= uiKit) {
+	             	      	$scope.className = 'informationArchitecture';
+	                    }
+	                    else if (Ytop >= uiKit && Ytop <= designIterations) {
+	             	      	$scope.className = 'uiKit';
+	                    }
+	                    else if (Ytop >= designIterations && Ytop <= currentDesign) {
+	             	      	$scope.className = 'designIterations';
+	                    }
+	                    else if (Ytop >= currentDesign && Ytop <= physicalPrototype) {
+	             	      	$scope.className = 'currentDesign';
+	                    } 
+	                    else if (Ytop >= physicalPrototype && Ytop <= challenges) {
+	             	      	$scope.className = 'physicalPrototype';
+	                    } 	                    
+	                    else if (Ytop >= challenges ) {
+	             	      	$scope.className = 'challenges';
+	                    };	                               	                                      
+  					});
+
+    			});
+
+
+    		});
+
+
+  		}]);
+    </script>	
+
+    <script type="text/javascript">
+    	// ===== Scroll to Top ==== 
+		$(window).scroll(function() {
+		    if ($(this).scrollTop() >= 50) {    // If page is scrolled more than 50px
+		        $('#top').fadeIn("fast");       // Fade in the arrow
+		    } else {
+		        $('#top').fadeOut("fast");      // Else fade out the arrow
+		    }
+		});
+		$('#top').click(function() {            // When arrow is clicked
+		    $('body,html').animate({
+		        scrollTop : 0                   // Scroll to top of body
+		    }, 500);
+		});
+    </script>
+</body>
+</html>
