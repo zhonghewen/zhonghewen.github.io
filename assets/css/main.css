@@ -1024,7 +1024,7 @@ a,
 
 .project-menu {
 	font-size: 12px;
-	background-color: #CAEBF2;
+	background-color: white;
     width: 300px;
     display: inline-block;
     position: fixed;
@@ -1183,6 +1183,7 @@ a,
     padding-bottom: 30px;
     background-color: #F8F8F8;	
 }
+
 
 .researchDetails p, ul{
 	margin-left: 15%;
