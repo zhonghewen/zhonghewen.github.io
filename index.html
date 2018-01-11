@@ -71,7 +71,7 @@
 			<!-- TIMELINE -->
 			<div class="timeline">
 				<div class="timeline-title">
-					<p class="home-title">Hi, I’m Zhonghe!</p>
+					<p ng-mouseenter="setIntro('sell')" ng-mouseleave="setIntro('greeting')" ng-class="{'home-title': headline == 'Hi! I am Zhonghe!'}" >{{headline}}</p>
 					<p class="content-title">A UX designer with curiosity of the world and passion to solve problems.</p>
 					<p ><a href="https://zhonghewen.github.io/images/ZhongheWen_Resume.pdf"><i class="fa fa-download"></i> Dowload My Resume </a></p>
 
@@ -179,6 +179,22 @@
     <script>
         angular.module('Zhonghe Portfolio',[])
         .controller('previewController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
+
+        	$scope.headline = "Hi! I am Zhonghe!";
+
+        	$scope.selfIntro = {
+        		greeting: "Hi! I am Zhonghe!",
+        		sell: "I am a second year MS-HCI student at GeorgiaTech. Here I grew up rapidly, understanding how to conduct research/choose research method, how to justify the design, how to express myself. Most importantly, I become confident and be proud of meself! I've learned so many new technologies within one year, from design tools (sketch, AE, inVision), to physical prototyping method(3d printing, laser cut), to front-end language (html, css, javascript, and many other js libraries), to data manipulation (python and machine learning library sklearn). Now, I truly belive that I could and would love to take challenges. Life is always about challenging ourself and I am ready for it!"
+        	};
+
+        	$scope.setIntro = function(text) {
+        		if (text == "sell") {
+        			$scope.headline = $scope.selfIntro.sell ;
+        		}
+        		else {
+        			$scope.headline = $scope.selfIntro.greeting;
+        		}
+        	}
 
         	$scope.project = [
         	{
