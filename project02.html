@@ -345,12 +345,30 @@
 			</div>
 			<!-- /CHALLENGES -->
 
+			<div class="link">
+				<div class="projectLink" class="linkPotluck" style="background-color: #CAEBF2;">
+					<a href="project01.html">
+					<h1>{{link.potluck.caption}}</h1>
+					<p>{{link.potluck.description}}</p>
+					<p>{{link.potluck.hashtag}}</p>
+					</a>
+				</div>
+				<div class="homeAndContact">
+						<p><a href="index.html"><i class="fa fa-home"></i></a></p>
+						<p>Home</p>							
+						<p><a href="mailto:zhonghe.wen@gatech.edu?"><i class="fa fa-envelope-o"></i></a></p>
+						<p>Contact</p>						
+				</div>
+				<div class="projectLink" class="linkOmniar" style="background-color: #E7FCFA;">
+					<a href="project03.html">
+					<h1>{{link.omniar.caption}}</h1>
+					<p>{{link.omniar.description}}</p>
+					<p>{{link.omniar.hashtag}}</p>		
+					</a>			
+				</div>
+			</div>
 
 			<footer>
-				<div class="">
-					<div class="miniBay"></div>
-					<div class="OmniAR"></div>
-				</div>
 				<div><p class="copyright font-alt m-b-0">© 2017 Designed and Developed by Zhonghe Wen, All Rights Reserved.</p></div>
 			</footer>			
 		</div>	
@@ -459,7 +477,23 @@
 
     			});
 
-
+			$scope.link = {
+				potluck: {
+					caption: "Potluck",
+					description: "Have troubles identifying and ordering tasty foods? Check out Potluck to see how we solve the problem!",
+					hashtag: "#MobileApp #LeadDesigner"
+				},
+				minibay: {
+					caption: "Minibay",
+					description: "How long has it been since last time you visited your parents? Check out MiniBay to see how we assist the elderly’ to maintain their health and brdge they and their children.",
+					hashtag: "#DesignForTheElderly #CrossPlatformProduct #Designer"					
+				},
+				omniar: {
+					caption: "Omniar",
+					description: "Feel your shopping experience at Walmart is not ideal? Check out OmniAR to see how we solve the problem!",
+					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
+				},
+			};
     		});
 
 
