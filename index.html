@@ -81,13 +81,13 @@
 					<div class="content-title">PROJECTS</div>
 					<ul class="non-bullet-ul">
 						<li class="project-item" ng-mouseover="setClass('potluck')" ng-class="{'activePotluck': className == 'potluck'}" >
-							<a href="" ><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
+							<a href="{{project[0].projectLink}}" ><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
 						</li>
 						<li class="project-item" id="minibayIndex" ng-mouseover="setClass('minibay')" ng-class="{'activeMinibay': className == 'minibay'}" >
-							<a href="" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
+							<a href="{{project[1].projectLink}}" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
 						</li>	
 						<li class="project-item" ng-mouseover="setClass('omniar')" ng-class="{'activeOmniar': className == 'omniar'}" >
-							<a href="" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
+							<a href="{{project[2].projectLink}}" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
 						</li>										
 					</ul>
 				</div>
@@ -96,13 +96,13 @@
 					<div class="content-title">WORKS</div>					
 					<ul class="non-bullet-ul">
 						<li class="project-item" ng-mouseover="setClass('adp')" ng-class="{'activeAdp': className == 'adp'}" >
-							<a href=""><p>{{work[0].brief}}</p><span>&nbsp; {{work[0].duration}}</span></a>
+							<a href="mailto:zhonghe.wen@gatech.edu?"><p>{{work[0].brief}}</p><span>&nbsp; {{work[0].duration}}</span></a>
 						</li>
 						<li class="project-item" ng-mouseover="setClass('host')" ng-class="{'activeHost': className == 'host'}" >
-							<a href=""><p>{{work[1].brief}}</p><span>&nbsp; {{work[1].duration}}</span></a>
+							<a href="mailto:zhonghe.wen@gatech.edu?"><p>{{work[1].brief}}</p><span>&nbsp; {{work[1].duration}}</span></a>
 						</li>	
 						<li class="project-item" ng-mouseover="setClass('camore')" ng-class="{'activeCamore': className == 'camore'}" >
-							<a href="" ><p>{{work[2].brief}}</p><span>&nbsp; {{work[2].duration}}</span></a>
+							<a href="mailto:zhonghe.wen@gatech.edu?" ><p>{{work[2].brief}}</p><span>&nbsp; {{work[2].duration}}</span></a>
 						</li>
 					</ul>
 				</div>	
@@ -115,20 +115,27 @@
 			<div class="project-des">
 				<div class="project-des-item " id={{item.id}} ng-repeat="item in project" ng-style="item.mainColor" >
 					<div class="preview" >
-						<!--<p style="z-index: 1; color: white; padding: 0px;">
-						{{item.hashTag}}	</p>	-->			
-						<video src="{{item.backgroundVideo}}" width="100%" controls="controls" loop></video>	
+                        <!--
+                        <p class="content-title font-alt-cap">{{item.title}}</p>                            
+						<p style="margin-top: 0px">
+						{{item.hashTag}}	</p>	
+                        -->
+                        <p></p>	
+						<video src="{{item.backgroundVideo}}" controls="controls" loop></video>	
 						<!--<img src="{{item.img}}">-->
 					</div>
 					<div class="description">
-						<div>
+						<div class="projectHeader">
 							<p class="content-title font-alt-cap">{{item.title}}</p>	
+                            <p>{{item.highlight}}</p>
 						</div>
 						<div>
 							<p class="font-alt-b">Story</p>
 							<p>{{item.story}}</p>
+                            <!--
 							<p class="font-alt-b">Highlights</p>
 							<p>{{item.highlight}}</p>
+                        -->
 							<p class="font-alt-b">My Role</p>
 							<p>{{item.myRole}}</p>
 						</div>
@@ -137,13 +144,14 @@
 				</div>
 				<div class="project-des-item " id={{item.id}} ng-repeat="item in work" ng-style="item.mainColor" >
 					<div class="preview" >
-						<a href="" id="{{item.id}}" ></a>
 						<!--<p>{{item.hashTag}}</p>-->
+                        <p></p>
 						<img src="{{item.backGroundImg}}">
 					</div>
 					<div class="description" >
-						<div>
+						<div class="projectHeader">
 							<p class="content-title font-alt-cap">{{item.title}}</p>	
+                            <p>{{item.highlight}}</p>
 						</div>
 						<div>
 							<p class="font-alt-b">Overview</p>
@@ -184,7 +192,7 @@
 
         	$scope.selfIntro = {
         		greeting: "Hi! I am Zhonghe!",
-        		sell: "I am a second year MS-HCI student at GeorgiaTech. Here I grew up rapidly, understanding how to conduct research/choose research method, how to justify the design, how to express myself. Most importantly, I become confident and be proud of meself! I've learned so many new technologies within one year, from design tools (sketch, AE, inVision), to physical prototyping method(3d printing, laser cut), to front-end language (html, css, javascript, and many other js libraries), to data manipulation (python and machine learning library sklearn). Now, I truly belive that I could and would love to take challenges. Life is always about challenging ourself and I am ready for it!"
+        		sell: "I am a second year MS-HCI student at GeorgiaTech. Here I grew up rapidly, understanding how to conduct research/choose research method, how to justify the design, how to express myself. Most importantly, I become confident and be proud of meself! I've learned so many new technologies this year, from design tools (sketch, AE, inVision), to physical prototyping method(3d printing, laser cut), to front-end language (html, css, javascript, and many other js libraries), to data manipulation (python and sklearn). Now, I truly belive that I could and would love to take challenges. Life is always about challenging ourself and I am ready for it!"
         	};
 
         	$scope.setIntro = function(text) {
@@ -218,7 +226,7 @@
         		img:"images/mockup.png",
         		title:"POTLUCK",
         		story:"Imagine you are on a trip to Spain and would like to try out local foods. However, you couldn’t figure out which dishes are delicious so you have to randomly order something. You taste it with high expectation. BUT, it’s AWFUL! Want to check out how we solve the problem?",
-        		highlight:"Strict user-centered design process",
+        		highlight:"#UCD #MobileAppDesign",
         		myRole:"Lead designer; Researcher",
         		projectLink:"project01.html",
         		button:"VIEW DETAILS"
@@ -242,9 +250,9 @@
         		backgroundVideo:"videos/miniBayVideo.mp4",
         		img:"",
         		title:"MINIBAY",
-        		story:"David’s parents have been over 70 and always foget when they purchased some fresh produce. And they really want instructions on keeping a healthy diet. | David cares his parents very much. However, he is too busy to visit them regularly. He would really like to keep informed about their health condition and help them to live in a healthier diet. Want to check out how we develop a solution satisfying both the parents and the kid?",
-        		highlight:"Cross platform products; Communication with developers",
-        		myRole:"Designer of the dashboard/box prototype; Developer of the dashboard",
+        		story:"David’s parents have been over 70 and always forgot when they purchased some fresh produce. And they really want instructions on keeping a healthy diet. | David cares his parents very much. However, he is too busy to visit them regularly. He would really like to keep informed about their health condition and help them to live in a healthier diet. Want to check out how we develop a solution satisfying both the parents and the kid?",
+        		highlight:"#SmartHome #DesignForTheElderly",
+        		myRole:"Designer/developer of the dashboard/box prototype",
         		projectLink:"project02.html",
         		button:"VIEW DETAILS"        		
         	},
@@ -267,11 +275,11 @@
         		backgroundVideo:"videos/omniARVideo.mp4",
         		img:"",
         		title:"OmniAR",
-        		story:"Mary finds her windshield cleaner has ran out so she decides to go to the nearby Walmart to purchase it. However, when she gets there she circled 3 rounds but still couldn’t find windshield. She asks a nearby associate. But the associate is busy cleaning up the shelf and seems tired. Want to check out how we better the shopping experience?",
-        		highlight:"Real-world client; Solve problems of complicated user group",
-        		myRole:"Designer involved in research",
+        		story:"Mary finds her windshield cleaner has depleted so she decides to get new cleaner at nearby Walmart. However, she has a problem locating windshield. She asks a nearby associate. But the associate is busy cleaning up the shelf and doesn't know the answer. Want to check out how we better the shopping experience?",
+        		highlight:"#ComplicatedUserGroup #AR",
+        		myRole:"Lead designer",
         		url:"",
-        		button:"COMING SOON"        		        		
+        		button:"View details"        		        		
         	}];
 
 
@@ -299,7 +307,8 @@
         		outcomes:"New design of benefit center; Validation report of new design",
         		myRole:"Designer involved in research",
         		learned:"How to negotiate with stakeholders to understand their goal, adjusting the design satisfying both of us; 2.How to conduct user research to defend important design when facing questions from stakeholders; 3.How to read the create consistent design when there isn’t standard component;4.How to annotate design and communicate with developers.",
-        		interestingFact:"In my validation research of new design, the research tool has crushed down. Want to know how I deal with it?; A small budget left at the end of physical year, how we make use of it to prepare for future research and design?" 		
+        		interestingFact:"In my validation research of new design, the research tool has crushed down. Want to know how I deal with it?; A small budget left at the end of physical year, how we make use of it to prepare for future research and design?",
+                highlight: "#CRM #DesignValidation" 		
         	},
         	{
         		id : "host",
@@ -324,7 +333,8 @@
         		outcomes:" Research report of inconsistent design across software; Instruction manual of our software",
         		myRole:"Designer involved in research",
         		learned:"1.How to conduct quick and dirty user research within internal team when the resource is limited; 2.How important visual and language consistency is.",
-        		interestingFact:"Understand of the development of third-party company of popular social platform."		
+        		interestingFact:"How Wechat official accounts gain followers?",
+                highlight:"#Research #ChineseSocialMediaWechat"	
         	},
         	{
         		id : "camore",
@@ -348,8 +358,9 @@
         		overview:"Camore is an E-commerce company providing 60-min medicine delivery service for people who encounter health issues. At the point I joined them they have developed the customer-side app but haven’t started on the employee-side medicine management system. So I started with a business flow chart and collaborate with product manager/ developers to design the information structure, prototype and the detailed web page.",
         		outcomes:"1.Prototype of the internal management system; 2.Mobile app design of delivery men used app. (side project)",
         		myRole:"Designer involved in research",
-        		learned:"1.How to collaborate with product manager and developer to understand the expectations and limitations, adjusting the design; 2.The structure of management system model.",
-        		interestingFact:""		
+        		learned:"1.How to collaborate with product manager and developer to understand the expectations and limitations, adjusting the design; 2.The information structure of internal management system.",
+        		interestingFact:"",
+                highlight:"#CRM"
         	}      	        	
         	];
 
