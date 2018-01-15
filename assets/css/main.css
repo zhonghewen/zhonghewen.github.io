@@ -511,163 +511,89 @@ Navigation
 Loader
 ------------------------------------------------------------------ */
 .page-loader {
-	background: #fff;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 9998;
-}
+    background: #fff;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
 
-
-/* The loader container */
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  
-  width: 200px;
-  height: 200px;
-  
-  margin-top: -100px;
-  margin-left: -100px;
+/* loader页面消失采用渐隐的方式*/
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;	
 
 }
 
-
-/* The dot */
-.dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-
-  width: 160px;
-  height: 100px;
-  
-  margin-top: -50px;
-  margin-left: -80px;
-
-  border-radius: 5px;
-
-  background-color: #1e3f57;
-
-  transform-type: preserve-3d;
-
-  animation: dot1 3s cubic-bezier(.55,.3,.24,.99) infinite;
+.fadeout {
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
-.dot:nth-child(2) {
-  z-index: 11;
-  
-  width: 150px;
-  height: 90px;
-  
-  margin-top: -45px;
-  margin-left: -75px;
-  
-  border-radius: 3px;
-  
-  background-color: #3c617d;
-  
-  animation-name: dot2;
+.preloader-1 {
+    margin: 300px auto 0;
+    width: 300px;
+    height: 12px;
+    text-align: center;
 }
 
-.dot:nth-child(3) {
-  z-index: 12;
-  
-  width: 40px;
-  height: 20px;
-  
-  margin-top: 50px;
-  margin-left: -20px;
-  
-  border-radius: 0 0 5px 5px;
-  
-  background-color: #6bb2cd;
-  
-  animation-name: dot3;
+
+.preloader-1 div {
+  color: #000;
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
-@keyframes dot1 {
-  3%, 97% {
-    width: 160px;
-    height: 100px;
-
-    margin-top: -50px;
-    margin-left: -80px;
-  }
-  30%, 36% {
-    width: 80px;
-    height: 120px;
-
-    margin-top: -60px;
-    margin-left: -40px;
-  }
-  63%, 69% {
-    width: 40px;
-    height: 80px;
-
-    margin-top: -40px;
-    margin-left: -20px;
-  }
-}
-
-@keyframes dot2 {
-  3%, 97% {
-    width: 150px;
-    height: 90px;
-
-    margin-top: -45px;
-    margin-left: -75px;
-  }
-  30%, 36% {
-    width: 70px;
-    height: 96px;
-
-    margin-top: -48px;
-    margin-left: -35px;
-  }
-  63%, 69% {
-    width: 32px;
-    height: 60px;
-
-    margin-top: -30px;
-    margin-left: -16px;
-  }
-}
-
-@keyframes dot3 {
-  3%, 97% {
-    width: 40px;
-    height: 20px;
-
-    margin-top: 50px;
-    margin-left: -20px;
-  }
-  30%, 36% {
-    width: 8px;
-    height: 8px;
-
-    margin-top: 49px;
-    margin-left: -5px;
-    
-    border-radius: 8px;
-  }
-  63%, 69% {
-    width: 16px;
-    height: 4px;
-
-    margin-top: -37px;
-    margin-left: -8px;
-    
-    border-radius: 10px;
-  }
+.preloader-1 .line {
+  width: 1px;
+  height: 12px;
+  background: #000;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-1 1000ms infinite ease-in-out;
 }
 
 
 
+.preloader-1 .line-1 { animation-delay: 800ms; }
+.preloader-1 .line-2 { animation-delay: 600ms; }
+.preloader-1 .line-3 { animation-delay: 400ms; }
+.preloader-1 .line-4 { animation-delay: 200ms; }
+.preloader-1 .line-6 { animation-delay: 200ms; }
+.preloader-1 .line-7 { animation-delay: 400ms; }
+.preloader-1 .line-8 { animation-delay: 600ms; }
+.preloader-1 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-1 { 
+  0% { 
+    opacity: 1;
+  }
+  50% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }  
+}
+
+@keyframes opacity-2 { 
+  0% { 
+    opacity: 1;
+    height: 15px;
+  }
+  50% { 
+    opacity: 0;
+    height: 12px;
+  }
+  100% { 
+    opacity: 1;
+    height: 15px;
+  }  
+}
 /* ------------------------------------------------------------------
 Selection
 ------------------------------------------------------------------ */
@@ -737,7 +663,7 @@ index page
 .home-title {
 	font-size: 36px;
 	font-weight: 500;
-	
+
 }
 
 .content-title {
@@ -935,11 +861,13 @@ to {width: 100%;}
 }
 
 .preview img {
-	width: 95%;
+	padding: 10px 10px 0px 10px;
+	width: 100%;
 }
 
 .preview video {
-	width: 95%;
+	padding: 10px 10px 0px 10px;
+	width: 100%;
 }
 
 .projectHeader {
@@ -952,7 +880,7 @@ to {width: 100%;}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 5px 40px;
+	margin: 5px 40px 0px 40px;
 
 }
 

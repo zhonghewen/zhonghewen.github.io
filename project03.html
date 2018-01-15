@@ -22,9 +22,9 @@
 		window.onload = function(){
 	    setTimeout(function(){
 	    var loader = document.getElementsByClassName("page-loader")[0];
-	    loader.className="loader" ;//使用渐隐的方法淡出loading page
-	    setTimeout(function(){loader.style.display="none"},3000)
-	    },3000)//强制显示loading page 1s
+	    loader.className="page-loader fadeout" ;//使用渐隐的方法淡出loading page
+	    setTimeout(function(){loader.style.display="none"},2000)
+	    },2000)//强制显示loading page 2s
 	}
 	</script>
 </head>
@@ -32,14 +32,21 @@
 <body class="main-body">
 
 	<!-- PRELOADER -->
-	<div class="page-loader">
-		<div class="loader">
-		  <div class="dot"></div>
-		  <div class="dot"></div>
-		  <div class="dot"></div>
-		</div>
-	</div>
-	<!-- /PRELOADER -->
+	<div class="page-loader" >
+        <div class="preloader-1">
+          <div>Loading Project OmniAR</div>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+          <span class="line line-4"></span>
+          <span class="line line-5"></span>
+          <span class="line line-6"></span>
+          <span class="line line-7"></span>
+          <span class="line line-8"></span>
+          <span class="line line-9"></span>
+        </div>
+	</div> 
+	<!-- /PRELOADER -->	
 
 	<!-- OVERLAY MENU -->
 	<div id="overlay-menu" class="overlay-menu">

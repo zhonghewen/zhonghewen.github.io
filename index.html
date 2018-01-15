@@ -12,8 +12,8 @@
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Plugins -->
+
+    <!-- Plugins -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	
 	<!-- Template core CSS -->
@@ -22,9 +22,9 @@
 		window.onload = function(){
 	    setTimeout(function(){
 	    var loader = document.getElementsByClassName("page-loader")[0];
-	    loader.className="loader" ;//使用渐隐的方法淡出loading page
-	    setTimeout(function(){loader.style.display="none"},3000)
-	    },3000)//强制显示loading page 1s
+	    loader.className="page-loader fadeout" ;//使用渐隐的方法淡出loading page
+	    setTimeout(function(){loader.style.display="none"},2000)
+	    },2000)//强制显示loading page 2s
 	}
 	</script>
 </head>
@@ -33,15 +33,22 @@
 <body>
 <div class="WRAPPER">
 
-	<!-- PRELOADER -->
-	<div class="page-loader" >
-		<div class="loader">
-		  <div class="dot"></div>
-		  <div class="dot"></div>
-		  <div class="dot"></div>
-		</div>
-	</div> 
-	<!-- /PRELOADER -->	
+    <!-- PRELOADER -->
+    <div class="page-loader" >
+        <div class="preloader-1">
+              <div>Loading Project Potluck</div>
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+              <span class="line line-4"></span>
+              <span class="line line-5"></span>
+              <span class="line line-6"></span>
+              <span class="line line-7"></span>
+              <span class="line line-8"></span>
+              <span class="line line-9"></span>
+        </div>
+    </div> 
+    <!-- /PRELOADER --> 
 
 
 	<!-- WRAPPER -->
@@ -120,7 +127,6 @@
 						<p style="margin-top: 0px">
 						{{item.hashTag}}	</p>	
                         -->
-                        <p></p>	
 						<video src="{{item.backgroundVideo}}" controls="controls" loop></video>	
 						<!--<img src="{{item.img}}">-->
 					</div>
@@ -145,7 +151,6 @@
 				<div class="project-des-item " id={{item.id}} ng-repeat="item in work" ng-style="item.mainColor" >
 					<div class="preview" >
 						<!--<p>{{item.hashTag}}</p>-->
-                        <p></p>
 						<img src="{{item.backGroundImg}}">
 					</div>
 					<div class="description" >
@@ -307,7 +312,7 @@
         		outcomes:"New design of benefit center; Validation report of new design",
         		myRole:"Designer involved in research",
         		learned:"How to negotiate with stakeholders to understand their goal, adjusting the design satisfying both of us; 2.How to conduct user research to defend important design when facing questions from stakeholders; 3.How to read the create consistent design when there isn’t standard component;4.How to annotate design and communicate with developers.",
-        		interestingFact:"In my validation research of new design, the research tool has crushed down. Want to know how I deal with it?; A small budget left at the end of physical year, how we make use of it to prepare for future research and design?",
+        		interestingFact:"In my validation research of new design, the research tool has crushed down. Want to know how I deal with it?",
                 highlight: "#CRM #DesignValidation" 		
         	},
         	{
@@ -449,7 +454,6 @@
       	
 
   		}]);
-
     </script>	
 
 
