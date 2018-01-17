@@ -527,7 +527,10 @@ Loader
 
 .fadeout {
     opacity: 0;
-    filter: alpha(opacity=0);
+}
+
+.fadein {
+	opacity: 1;
 }
 
 .preloader-1 {
@@ -660,11 +663,43 @@ index page
 	padding-bottom: 20px;
 }
 
-.home-title {
+.home-title p{
 	font-size: 36px;
 	font-weight: 500;
-
+/*	animation: myOpacity 2s ease-in-out;
+	-webkit-animation: myOpacity 2s ease-in-out; */
+/* loader页面消失采用渐隐的方式*/
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;	
 }
+
+.home-intro p{
+	width: 90%;
+/* loader页面消失采用渐隐的方式*/
+    -webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    transition: opacity 1s ease;	
+/*	animation: myOpacity 2s ease-in-out ;*/
+/*	-webkit-animation: myOpacity ease-in-out; */
+}
+/*
+@keyframes myOpacity
+{
+from {opacity:0;}
+to {opacity:100;}
+}*/
+/*
+@-webkit-keyframes myOpacity 
+{
+from {opacity:0;}
+to {opacity:100;}
+}
+*/
+
+
 
 .content-title {
 	font-size: 16px;

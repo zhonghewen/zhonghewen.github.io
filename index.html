@@ -36,7 +36,7 @@
     <!-- PRELOADER -->
     <div class="page-loader" >
         <div class="preloader-1">
-              <div>Loading Project Potluck</div>
+              <div>Loading Zhonghe's Portfolio</div>
               <span class="line line-1"></span>
               <span class="line line-2"></span>
               <span class="line line-3"></span>
@@ -78,7 +78,7 @@
 			<!-- TIMELINE -->
 			<div class="timeline">
 				<div class="timeline-title">
-					<p ng-mouseenter="setIntro('sell')" ng-mouseleave="setIntro('greeting')" ng-class="{'home-title': headline == 'Hi! I am Zhonghe!'}" >{{headline}}</p>
+					<div ng-class="introClass" ><p>{{headline}}</p></div>
 					<p class="content-title">A UX designer with curiosity of the world and passion to solve problems.</p>
 					<p ><a href="https://zhonghewen.github.io/images/ZhongheWen_Resume.pdf"><i class="fa fa-download"></i> Dowload My Resume </a></p>
 
@@ -194,6 +194,7 @@
         .controller('previewController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
 
         	$scope.headline = "Hi! I am Zhonghe!";
+            $scope.introClass = "home-title";
 
         	$scope.selfIntro = {
         		greeting: "Hi! I am Zhonghe!",
@@ -203,9 +204,12 @@
         	$scope.setIntro = function(text) {
         		if (text == "sell") {
         			$scope.headline = $scope.selfIntro.sell ;
+                    $scope.introClass = "home-intro";
+
         		}
         		else {
         			$scope.headline = $scope.selfIntro.greeting;
+                    $scope.introClass = "home-title";                    
         		}
         	}
 
@@ -283,7 +287,7 @@
         		story:"Mary finds her windshield cleaner has depleted so she decides to get new cleaner at nearby Walmart. However, she has a problem locating windshield. She asks a nearby associate. But the associate is busy cleaning up the shelf and doesn't know the answer. Want to check out how we better the shopping experience?",
         		highlight:"#ComplicatedUserGroup #AR",
         		myRole:"Lead designer",
-        		url:"",
+                projectLink:"project03.html",
         		button:"View details"        		        		
         	}];
 
