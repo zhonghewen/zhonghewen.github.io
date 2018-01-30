@@ -121,23 +121,23 @@
                     <li class="menu-subtitle"><a href="#outcomes" ng-class="{'activeMenu': className == 'outcomes'}"> Outcomes</a></li>               
 
                     <li class="menu-subtitle"><a href="#research" class="menu-title"  ng-class="{'activeMenu': className == 'research'}">RESEARCH</a></li>
-                    <li class="menu-subtitle"><a href="#theElderly" ng-class="{'activeMenu': className == 'theElderly'}">The Elderly</a></li>  
-                    <li class="menu-subtitle"><a href="#children" ng-class="{'activeMenu': className == 'children'}"> Children</a></li>
+                    <li class="menu-subtitle"><a href="#targetUser" ng-class="{'activeMenu': className == 'targetUser'}">Target User</a></li>  
+                    <li class="menu-subtitle"><a href="#storyboard" ng-class="{'activeMenu': className == 'storyboard'}"> Storyboard</a></li>
 
 
 
                     <li class="menu-subtitle"><a href="#design" class="menu-title" ng-class="{'activeMenu': className == 'design'}">DESIGN</a></li>
-                    <li class="menu-subtitle"><a href="#designNeedsAndProductStructure" ng-class="{'activeMenu': className == 'designNeedsAndProductStructure'}">  Design Needs and Product Structure</a></li>
+                    <li class="menu-subtitle"><a href="#designNeedsAndProductStructure" ng-class="{'activeMenu': className == 'designNeedsAndProductStructure'}">  Product Structure</a></li>
+                    <li class="menu-subtitle"><a href="#uiKit" ng-class="{'activeMenu': className == 'uiKit'}"> UI Kit</a></li>                    
                     <li class="menu-subtitle"><a href="#informationArchitecture" ng-class="{'activeMenu': className == 'informationArchitecture'}"> Information Architecture</a></li>
-                    <li class="menu-subtitle"><a href="#uiKit" ng-class="{'activeMenu': className == 'uiKit'}"> UI Kit</a></li>
 
                     <li class="menu-subtitle"><a href="#designIterations" ng-class="{'activeMenu': className == 'designIterations'}">  Design Iterations</a></li>
 
                     <li class="menu-subtitle"><a href="#currentDesign" ng-class="{'activeMenu': className == 'currentDesign'}">  Current Design</a></li> 
 
-                    <li class="menu-subtitle"><a href="#physicalPrototype" ng-class="{'activeMenu': className == 'physicalPrototype'}">  Physical Prototype</a></li> 
+                    <li class="menu-subtitle"><a href="#physicalPrototype" ng-class="{'activeMenu': className == 'physicalPrototype'}">  Refrigerator Prototype</a></li> 
 
-                    <li class="menu-title"><a href="#challenges" class="menu-title" ng-class="{'activeMenu': className == 'challenges'}">Challenges</a></li>  
+                    <li class="menu-title"><a href="#challenges" class="menu-title" ng-class="{'activeMenu': className == 'challenges'}">Thoughts on Smart Home</a></li>  
 
 				</ul>
 
@@ -202,48 +202,39 @@
 					<div class="section-dissection">After understand the problem space how we narrow down the problem?</div>                	    
 					<p>Limited by the time frame of this project we needed to specify the user needs and design needs within one week. However, we are very different from our target user and it is difficult for us to imagine their life. So we decided to conduct interviews to understand them. Each of our team member made a call to our grandparents, asking them how they keep the inventory, what's their concerns for their health and diet, how's their experience with mobile app and their relationship with their children. We then made a storyboard to specify the scenario and major user needs. </p>
 
-					<h2 id="theElderly">The Elderly</h2>
-					<p>One group of our target User is the elderly who is over 70.</p>
-					<a href="images/targetElderly.png"><img src="images/targetElderly.png"></a>
-					
+					<h2 id="targetUser">TARGET USER</h2>
+					<p>We have two group of users: the elderly and their children. </p>
 
-					<h3>User Needs</h3>
+					<h3>THE ELDERLY</h3>
+					<a href="images/theElderly.png"><img src="images/theElderly.png"></a>
+					<p>Their major needs are:</p>
 					<ul>
 						<li>Obtain instructions on a healthy diet. (freshness of foods, nutrition/dishes suggestions)</li>
 						<li>Want a user friendly interface.</li>
 						<li>Keep connection to their children.</li>
-					</ul>
-
-					<h3>Storyboard</h3>
-					<p>As seen below, Mary is enjoying reading a book. Suddenly she hears the clock ringing and realizes it is 12 P.M. She decides to have something for lunch. "Uhmm, recently I always feel tired I should pay more attention to my health." She thinks and carefully reads the nutrition report on the big screen and see she barely had any vitamins this week. So she asks Alexa to open Minibay to see what fruits she has in her refrigerator. Minibay also gives her healthy lunch suggestions based on her inventory.</p>
-					<a href="images/TheElderlyScenario.png"><img src="images/TheElderlyScenario.png"></a>
-					
-				</div>
-
-				<div class="project-reflection">
-					<p class="reflection-title">After Interviews How We Integrate Our Findings and Shape Our Product?</p>
-					<p>Semi-structured interviews always bring us overwhelming details. A common way to get key insights is affinity diagram. However, we want a more quick and dirty way which clearly explains the scenario. The first idea came to our mind was user journey map. But there wasn't standard procedure in everyone's life. So we finally decided to make storyboard. In the discussion of the story we can easily retrieve many details from interviews and the scenario makes it easier to recognize key user needs. It is also good for us to sell our ideas to the others.</p>
-				</div>	
+					</ul>					
 
 
-				<div class="project-content">
-					<h2 id="children">Children</h2>
-					<p>The other group of our target user is adult who has really busy work.</p>
+					<h3>THE CHILDREN</h3>
+					<a href="images/theChildren.png"><img src="images/theChildren.png"></a>	
+					<p>Their major needs are:</p>
 
-					<a href="images/targetChild2.png"><img src="images/targetChild2.png"></a>
-
-					<h3 id="">User Needs</h3>
 					<ul>
 						<li>Provide assistance to parents' health.</li>
 						<li>Keep connections to parents.</li>
 						<li>Have easy access to the technology.</li>
 					</ul>
 
-					<h3>Storyboard</h3>
-					<a href="images/childScenario.png"><img src="images/childScenario.png"></a>
-					
-
+					<h2 id="storyboard">Storyboard</h2>
+					<!--<p>As seen below, Mary is enjoying reading a book. Suddenly she hears the clock ringing and realizes it is 12 P.M. She decides to have something for lunch. "Uhmm, recently I always feel tired I should pay more attention to my health." She thinks and carefully reads the nutrition report on the big screen and see she barely had any vitamins this week. So she asks Alexa to open Minibay to see what fruits she has in her refrigerator. Minibay also gives her healthy lunch suggestions based on her inventory.</p>
+					-->
+					<a href="images/storyboardMinibay.png"><img src="images/storyboardMinibay.png"></a>
 				</div>
+
+				<div class="project-reflection">
+					<p class="reflection-title">After Interviews How We Integrate Our Findings and Shape Our Product?</p>
+					<p>Semi-structured interviews always bring us overwhelming details. A common way to get key insights is affinity diagram. However, we want a more quick and dirty way which clearly explains the scenario. The first idea came to our mind was user journey map. But there wasn't standard procedure in everyone's life. So we finally decided to make storyboard. In the discussion of the story we can easily retrieve many details from interviews and the scenario makes it easier to recognize key user needs. It is also good for us to sell our ideas to the others.</p>
+				</div>	
 
 			</div>
 			<!-- /RESEARCH -->
@@ -254,29 +245,29 @@
 				<div class="project-content">
             	    <h1 class="">DESIGN</h1>
 					<div class="section-dissection">We defined user needs through user research but how it guided our design?</div>
-					<h2 id="designNeedsAndProductStructure">Design Needs and Product Structure</h2>
-                    <p>In the storyboard we could clearly see we needed a dashboard + a Alexa app for parents side and a mobile app for children side. We also needed a refrigerator prototype to monitor inventory of foods and update the database. So we discussed the product structure (shown as below) and split up the work to explore the a feasible way to make it work.</p> 
+					<h2 id="designNeedsAndProductStructure">Product Structure</h2>
+                    <p>In the storyboard we could clearly see we needed a dashboard + a Alexa app for parents side and a mobile app for children side. We also needed a refrigerator prototype to monitor inventory of foods and update the database. So we discussed the product structure. There are four parts in Minibay:</p> 
                     <a href="images/systemStructure.png"><img src="images/systemStructure.png"></a>
-					
-
+                    <p>In our team I was mainly responsible for the instruction dashboard design and the refrigerator prototype. In the next part I will focus on my design. But you can check out the android app <a href="https://invis.io/EVAIWGN2S">here</a> .</p>					
 					<!--<img src="images/designIdeasMinibay.png">-->
 				</div>
 
+
+				<div class="project-content">
+                    <h2 id="uiKit">UI Kit</h2>
+                    <p>When we started design we realized how important it is to have a style guide at an early stage. Each designer choosed very different font, decoration line, icons although we have discussed the design style and thought we reached a decision. We then created a UI kit which keeps the visual language consistent throughout different platfrom. <a href=""> Check Out Full Image</a> </p>
+                    <a href="images/UikitSmall.png"><img src="images/UikitSmall.png"></a>
+				</div>	
+
+
 				<div class="project-content" >
-					<h2 id="informationArchitecture">Information Architecture</h2>
+					<h2 id="informationArchitecture">Information Architecture of Instruction Dashboard</h2>
                     <p>
-                    In our team, one of my major responsibility was the dashboard design for the elderly. I started it from the user needs (instructions on a healthy diet, the elderly friendly interface and connection with children) and further listed out the functions. I also checked the generic dashboard design and decided to add general information such as time, date and weather. I added these information because this project was not just about inventory management. It was more like an exploration of scenario of smart home. The dashboard won't be a pure simple display of inventory. It is very possible to become an integrated terminal for multiple smart home apps. The general information could help user understand that there is a higher level structure.</p>
+                    In our team, one of my major responsibility was the dashboard design for the elderly. I started it from the user needs and further listed out the functions. I also checked the generic dashboard design and decided to add general information such as time, date and weather. </p>
                     <a href="images/dashboardStructure.png"><img src="images/dashboardStructure.png"></a>
 					
 				</div>
 
-				
-				<div class="project-content">
-                    <h2 id="uiKit">UI Kit</h2>
-                    <p>When we started design we realized how important it is to have a style guide first. Each designer choosed very different font, decoration line, icons although we have discussed the design style and thought we reached a decision. We then created a UI kit which keeps the visual language consistent throughout different platfrom. <a href=""> Check Out Full Image</a> </p>
-                    <a href="images/UikitSmall.png"><img src="images/UikitSmall.png"></a>
-					
-				</div>	
 
 				<div class="project-content " id="designDetails">
 					<h2 id="designIterations">Design Iterations</h2>
@@ -321,7 +312,7 @@
 				</div>                  
 
 				<div class="project-content " id="physicalPrototype">
-					<h2 >Physical Prototype</h2>
+					<h2 >Refrigerator Prototype</h2>
 					<p>As the only Industrial Design background student I was also responsible for the design of the physical prototype. In the process, I needed to collaborate with one of our team member, Jian Ruan (who is responsible for Raspberry Pi + database in our team). So before I started design I communicated with Jian to understand his requirements for the prototype. The requirements are listed below.</p>
 					<ul>
 						<li>6cm x 6cm x 6cm space for Raspberry Pi.</li>
@@ -354,10 +345,10 @@
 			<div class="" id="challenges">
 																					
 				<div class="project-content" style="padding-bottom: 30px;">
-            	    <h1 class=" ">Understanding of smart home</h1>
+            	    <h1 class=" ">Thoughts on smart home</h1>
 					<div class="section-dissection">Thoughts on the whole project or the topic</div>
 					<h2>Is smart home "smart" enough?</h2>
-                    <p>Smart home is very popular in recent years. Some talented engineers transform their home and use mobile apps to control the light, curtain, robot and many other things. However, those smart home still doesn’t look “smart” enough. People have to tell mobile app what they want to do and operate it to do it. Smart speaker is an alternative choice but smart speaker only take voice command as inputs therefore can’t have the context. For example, when people get sleepy a smart home should be able to adjust the lighting and background music automatically. Thus I thought smart home should involve devices like glasses or activity tracker (which can monitor vital signs and other physical features) to be smart. </p>
+                    <p>Smart home is very popular in recent years. Some talented engineers transform their home and use mobile apps to control the light, curtain, robot and many other things. However, those smart home still doesn’t look “smart” enough. People have to use mobile app to control it. Smart speaker is an alternative choice but smart speaker only take voice command as inputs therefore can’t have the context. For example, when people get sleepy a smart home should be able to adjust the lighting and background music automatically. Thus I am wondering it would exciting if smart home could involve AR glasses or activity tracker (which can monitor vital signs and other physical features). </p>
 
                 </div>			                        			                        
 			</div>
@@ -427,7 +418,7 @@
 				var outcomes = angular.element(document.getElementById("outcomes")).prop('offsetTop');
 
 				var research = angular.element(document.getElementById("research")).prop('offsetTop');			
-				var theElderly = angular.element(document.getElementById("theElderly")).prop('offsetTop');
+				var targetUser = angular.element(document.getElementById("targetUser")).prop('offsetTop');
 				var children = angular.element(document.getElementById("children")).prop('offsetTop');			
 
 
@@ -458,26 +449,26 @@
 	                    else if (Ytop >= outcomes && Ytop <= research) {
 	             	      	$scope.className = 'outcomes';
 	                    }
-	                    else if (Ytop >= research && Ytop <= theElderly) {
+	                    else if (Ytop >= research && Ytop <= targetUser) {
 	             	      	$scope.className = 'research';
 	                    }
-	                    else if (Ytop >= theElderly && Ytop <= children) {
-	             	      	$scope.className = 'theElderly';
+	                    else if (Ytop >= targetUser && Ytop <= storyboard) {
+	             	      	$scope.className = 'targetUser';
 	                    }
-	                    else if (Ytop >= children && Ytop <= design) {
-	             	      	$scope.className = 'children';
+	                    else if (Ytop >= storyboard && Ytop <= design) {
+	             	      	$scope.className = 'storyboard';
 	                    }
 	                    else if (Ytop >= design && Ytop <= designNeedsAndProductStructure) {
 	             	      	$scope.className = 'design';
 	                    }  
-	                    else if (Ytop >= designNeedsAndProductStructure && Ytop <= informationArchitecture) {
+	                    else if (Ytop >= designNeedsAndProductStructure && Ytop <= uiKit) {
 	             	      	$scope.className = 'designNeedsAndProductStructure';
 	                    }
-	                    else if (Ytop >= informationArchitecture && Ytop <= uiKit) {
-	             	      	$scope.className = 'informationArchitecture';
-	                    }
-	                    else if (Ytop >= uiKit && Ytop <= designIterations) {
+	                    else if (Ytop >= uiKit && Ytop <= informationArchitecture) {
 	             	      	$scope.className = 'uiKit';
+	                    }
+	                    else if (Ytop >= informationArchitecture && Ytop <= designIterations) {
+	             	      	$scope.className = 'informationArchitecture';
 	                    }
 	                    else if (Ytop >= designIterations && Ytop <= currentDesign) {
 	             	      	$scope.className = 'designIterations';
