@@ -209,7 +209,7 @@
 				<div class="project-content">
             	    <h1 class="">RESEARCH</h1>
 					<div class="section-dissection">After understand the problem space how we narrow down the problem?</div>                	    
-					<p>Limited by the time frame of this project we needed to specify the user needs and design needs within one week. However, we are very different from our target user and<span class="question"> it is difficult for us to imagine their life</span>. So we decided to<span class="anser"> conduct interviews to understand it</span>. Each of our team member made a call to our grandparents, asking them how they keep the inventory, what's their concerns for their health and diet, how's their experience with mobile app and their relationship with their children. We then made a storyboard to specify the scenario and major user needs. </p>
+					<p>Limited by the time frame of this project we needed to specify the user needs and design needs within one week. However, we are very different from our target user and<span class="question"> it is difficult for us to imagine their life</span>. So we decided to<span class="answer"> conduct interviews to understand it</span>. Each of our team member made a call to our grandparents, asking them how they keep the inventory, what's their concerns for their health and diet, how's their experience with mobile app and their relationship with their children. We then made a storyboard to specify the scenario and major user needs. </p>
 
 					<h2 id="targetUser">TARGET USER</h2>
 					<p>We have two group of users: the elderly and their children. </p>
@@ -242,7 +242,7 @@
 
 				<div class="project-reflection">
 					<p class="reflection-title">After Interviews How We Integrate Our Findings and Shape Our Product?</p>
-					<p>Semi-structured interviews always bring us overwhelming details. A common way to get key insights is affinity diagram. However, we want a more quick and dirty way which clearly explains the scenario. The first idea came to our mind was user journey map. But there wasn't standard procedure in everyone's life. So we finally decided to make storyboard. In the discussion of the story we can easily retrieve many details from interviews and the scenario makes it easier to recognize key user needs. It is also good for us to sell our ideas to the others.</p>
+					<p><span class="question">Semi-structured interviews always bring us overwhelming details</span>. A common way to get key insights is affinity diagram. However, we want a more quick and dirty way which defines the key use case. So we decided to make<span class="answer"> storyboard. In the discussion of the story we can easily retrieve many details from interviews and the scenario makes it easier to recognize key user needs. It is also good for us to sell our ideas to the others.</p>
 				</div>	
 
 			</div>
@@ -364,26 +364,27 @@
 			<!-- /CHALLENGES -->
 
 			<div class="link">
-				<div class="projectLink" class="linkPotluck" style="background-color: #CAEBF2;">
+				<div class="projectLink" class="linkPotluck" style="background-color: #FCE7E9;">
 					<a href="project01.html">
 					<h1>{{link.potluck.caption}}</h1>
 					<p>{{link.potluck.description}}</p>
 					<p>{{link.potluck.hashtag}}</p>
 					</a>
-				</div>
+				</div>				
 				<div class="homeAndContact">
 						<p><a href="index.html"><i class="fa fa-home"></i></a></p>
 						<p>Home</p>							
 						<p><a href="mailto:zhonghe.wen@gatech.edu?"><i class="fa fa-envelope-o"></i></a></p>
 						<p>Contact</p>						
 				</div>
-				<div class="projectLink" class="linkOmniar" style="background-color: #E7FCFA;">
+				<div class="projectLink" class="linkOmniar" style="background-color: #FCF9E7;">
 					<a href="project03.html">
 					<h1>{{link.omniar.caption}}</h1>
 					<p>{{link.omniar.description}}</p>
-					<p>{{link.omniar.hashtag}}</p>		
-					</a>			
-				</div>
+					<p>{{link.omniar.hashtag}}</p>	
+					</a>				
+				</div>	
+
 			</div>
 
 			<footer>
@@ -495,6 +496,7 @@
 
     			});
 
+
 			$scope.link = {
 				potluck: {
 					caption: "Potluck",
@@ -511,6 +513,11 @@
 					description: "Feel your shopping experience at Walmart is not ideal? Check out OmniAR to see how we solve the problem!",
 					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
 				},
+				amazoningReview: {
+					caption: "Amazoning Review",
+					description: "Want to efficiently utilize reviews to understand earphones? Check out Amazoning Review to see how we solve the problem!",
+					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
+				},				
 			};
     		});
 

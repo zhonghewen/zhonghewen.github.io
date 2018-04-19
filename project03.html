@@ -303,25 +303,26 @@
 
 			<!-- /LINKS -->
 			<div class="link">
-				<div class="projectLink" class="linkPotluck" style="background-color: #CAEBF2;">
-					<a href="project01.html">
-					<h1>{{link.potluck.caption}}</h1>
-					<p>{{link.potluck.description}}</p>
-					<p>{{link.potluck.hashtag}}</p>
-					</a>
-				</div>
+				
+				<div class="projectLink" class="linkMinibay" style="background-color: #E7FCFA;">
+					<a href="project02.html">
+					<h1>{{link.minibay.caption}}</h1>
+					<p>{{link.minibay.description}}</p>
+					<p>{{link.minibay.hashtag}}</p>	
+					</a>				
+				</div>	
 				<div class="homeAndContact">
 						<p><a href="index.html"><i class="fa fa-home"></i></a></p>
 						<p>Home</p>							
 						<p><a href="mailto:zhonghe.wen@gatech.edu?"><i class="fa fa-envelope-o"></i></a></p>
 						<p>Contact</p>						
 				</div>				
-				<div class="projectLink" class="linkMinibay" style="background-color: #FCE7E9;">
-					<a href="project02.html">
-					<h1>{{link.minibay.caption}}</h1>
-					<p>{{link.minibay.description}}</p>
-					<p>{{link.minibay.hashtag}}</p>		
-					</a>			
+				<div class="projectLink" class="linkAmazoningReview" style="background-color: #CAEBF2;">
+					<a href="amazoningReview.html">
+					<h1>{{link.amazoningReview.caption}}</h1>
+					<p>{{link.amazoningReview.description}}</p>
+					<p>{{link.amazoningReview.hashtag}}</p>	
+					</a>				
 				</div>
 			</div>
 			<!-- /LINKS -->
@@ -426,6 +427,7 @@
 
     			});
 
+
 			$scope.link = {
 				potluck: {
 					caption: "Potluck",
@@ -442,6 +444,11 @@
 					description: "Feel your shopping experience at Walmart is not ideal? Check out OmniAR to see how we solve the problem!",
 					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
 				},
+				amazoningReview: {
+					caption: "Amazoning Review",
+					description: "Want to efficiently utilize reviews to understand earphones? Check out Amazoning Review to see how we solve the problem!",
+					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
+				},				
 			};
     		});
 

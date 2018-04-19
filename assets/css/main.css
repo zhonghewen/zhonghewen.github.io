@@ -729,12 +729,35 @@ to {opacity:100;}
 	font-style: italic;	
 }
 
-.activePotluck a{
+.activeAmazoningReview a{
 	color: #3EA1B6;	
 }
 
-.activePotluck a:hover{
+.activeAmazoningReview a:hover{
 	color: #3EA1B6;	
+}
+
+.activeAmazoningReview a p:after {
+    content: "";
+    height: .8em;
+    position: absolute;
+    bottom: -.1em;
+    left: -.8em;
+    z-index: -1;	
+	width: 100%;
+	background-color: #CAEBF2;			
+	animation: spread 0.3s;
+	-moz-animation:spread 0.3s; /* Firefox 4 */
+	-webkit-animation:spread 0.3s; /* Safari and Chrome */
+	-o-animation:spread 0.3s; /* Opera */
+}
+
+.activePotluck a{
+	color: #EC6773;	
+}
+
+.activePotluck a:hover{
+	color: #EC6773;	
 }
 
 .activePotluck a p:after {
@@ -745,7 +768,7 @@ to {opacity:100;}
     left: -.8em;
     z-index: -1;	
 	width: 100%;
-	background-color: #CAEBF2;			
+	background-color: #FCE7E9;			
 	animation: spread 0.3s;
 	-moz-animation:spread 0.3s; /* Firefox 4 */
 	-webkit-animation:spread 0.3s; /* Safari and Chrome */
@@ -764,37 +787,14 @@ to {width: 100%;}
 }
 
 .activeMinibay a{
-	color: #EC6773;	
+	color: #3CC1A3;	
 }
 
 .activeMinibay a:hover{
-	color: #EC6773;	
+	color: #3CC1A3;	
 }
 
 .activeMinibay a p:after {
-    content: "";
-    height: .8em;
-    position: absolute;
-    bottom: -.1em;
-    left: -.8em;
-    z-index: -1;	
-	width: 100%;
-	background-color: #FCE7E9;			
-	animation: spread 0.3s;
-	-moz-animation:spread 0.3s; /* Firefox 4 */
-	-webkit-animation:spread 0.3s; /* Safari and Chrome */
-	-o-animation:spread 0.3s; /* Opera */
-}
-
-.activeOmniar a{
-	color: #3CC1A3;	
-}
-
-.activeOmniar a:hover{
-	color: #3CC1A3;	
-}
-
-.activeOmniar a p:after {
     content: "";
     height: .8em;
     position: absolute;
@@ -809,12 +809,35 @@ to {width: 100%;}
 	-o-animation:spread 0.3s; /* Opera */
 }
 
-.activeAdp a{
+.activeOmniar a{
 	color: #E3AA50;	
 }
 
-.activeAdp a:hover{
+.activeOmniar a:hover{
 	color: #E3AA50;	
+}
+
+.activeOmniar a p:after {
+    content: "";
+    height: .8em;
+    position: absolute;
+    bottom: -.1em;
+    left: -.8em;
+    z-index: -1;	
+	width: 100%;
+	background-color: #FCF9E7;			
+	animation: spread 0.3s;
+	-moz-animation:spread 0.3s; /* Firefox 4 */
+	-webkit-animation:spread 0.3s; /* Safari and Chrome */
+	-o-animation:spread 0.3s; /* Opera */
+}
+
+.activeAdp a{
+	color: #DC7119;	
+}
+
+.activeAdp a:hover{
+	color: #DC7119;	
 }
 
 .activeAdp a p:after {
@@ -825,7 +848,7 @@ to {width: 100%;}
     left: -.8em;
     z-index: -1;	
 	width: 100%;
-	background-color: #FCF9E7;			
+	background-color: #FFF3EC;			
 	animation: spread 0.3s;
 	-moz-animation:spread 0.3s; /* Firefox 4 */
 	-webkit-animation:spread 0.3s; /* Safari and Chrome */
@@ -1074,6 +1097,11 @@ a,
 	margin-bottom: 40px;
 }
 
+.project-content video{
+	margin-left: 10%;
+	width: 80%;
+	margin-bottom: 40px;
+}
 
 .project-reflection {
     border-top: 1px solid #DFDFDF;

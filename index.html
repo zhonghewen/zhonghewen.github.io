@@ -87,15 +87,20 @@
 				<div class="projects" id="projectNav">
 					<div class="content-title">PROJECTS</div>
 					<ul class="non-bullet-ul">
-						<li class="project-item" ng-mouseover="setClass('potluck')" ng-class="{'activePotluck': className == 'potluck'}" >
+						<li class="project-item" ng-mouseover="setClass('amazoningReview')" ng-class="{'activeAmazoningReview': className == 'amazoningReview'}" >
 							<a href="{{project[0].projectLink}}" ><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
+						</li>	
+
+						<li class="project-item" ng-mouseover="setClass('potluck')" ng-class="{'activePotluck': className == 'potluck'}" >
+							<a href="{{project[1].projectLink}}" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
 						</li>
 						<li class="project-item" id="minibayIndex" ng-mouseover="setClass('minibay')" ng-class="{'activeMinibay': className == 'minibay'}" >
-							<a href="{{project[1].projectLink}}" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
+							<a href="{{project[2].projectLink}}" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
 						</li>	
 						<li class="project-item" ng-mouseover="setClass('omniar')" ng-class="{'activeOmniar': className == 'omniar'}" >
-							<a href="{{project[2].projectLink}}" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
-						</li>										
+							<a href="{{project[3].projectLink}}" ><p>{{project[3].brief}}</p><span>&nbsp;{{project[3].duration}}</span></a>
+						</li>	
+
 					</ul>
 				</div>
 
@@ -212,11 +217,11 @@
 
         	$scope.project = [
         	{
-        		id: "potluck",
-        		projInd: 1,
+        		id: "amazoningReview",
+        		projInd: 0,
         		trycolor:"#EC6773",
-        		brief:"Potluck, Your on-campus dining saver | ",
-        		duration:" Aug. - Dec. 2016",
+        		brief:"Amazoning Review, Save you from a sea of reviews | ",
+        		duration:" Jan. - present 2018",
         		mainColor: {
         			"background-color": "#CAEBF2"
         		},
@@ -225,6 +230,32 @@
         		} ,       		
         		buttonColor:{
         			"background-color": "#4A90E2"
+        		},
+        		hashTag:"#Data visualization",
+        		backGroundImg:"",
+        		backgroundVideo:"videos/design3.mov",
+        		img:"images/mockup.png",
+        		title:"Amazoning Review",
+        		story:"Mary wants a pair of earbuds. She searches 'sport earbuds' on Amazon and opens many earbud pages. She reads over the product description but still doesn't understand whether the earbuds is good for jogging. She tries to read reviews to understand it and gets lost in the overwhelming reviews. Want to check out how we solve the problem?",
+        		highlight:"#DataVisualization",
+        		myRole:"(Personal Project) Designer; Researcher; Developer",
+        		projectLink:"amazoningReview.html",
+        		button:"VIEW DETAILS"
+        	},        	
+        	{
+        		id: "potluck",
+        		projInd: 1,
+        		trycolor:"#EC6773",
+        		brief:"Potluck, Your on-campus dining saver | ",
+        		duration:" Aug. - Dec. 2016",
+        		mainColor: {
+        			"background-color": "#FCE7E9"
+        		},
+        		fontColor: {
+        			"color": "#EC6773"
+        		} ,       		
+        		buttonColor:{
+        			"background-color": "#EC6773"
         		},
         		hashTag:"#Strict user-centered design process",
         		backGroundImg:"",
@@ -243,14 +274,14 @@
         		brief:"Minibay, Grandma's nutrition instructor | ",
         		duration:"Jan. - May 2017",        		
         		mainColor: {
-        			"background-color": "#FCE7E9"
+        			"background-color": "#E7FCFA"
         		},   
         		fontColor: {
-        			"color": "#EC6773"
+        			"color": "#3CC1A3"
         		} ,       		
         		buttonColor:{
-        			"background-color": "#EC6773"
-        		},        		     		
+        			"background-color": "#50E3C2"
+        		},       		     		
         		hashTag:"",
         		backGroundImg:"",
         		backgroundVideo:"videos/miniBayVideo.mp4",
@@ -268,13 +299,13 @@
         		brief:"OmniAR, Efficient AR shopping experience for Warmart | ",
         		duration:"Jan. - May 2017",         		
         		mainColor: {
-        			"background-color": "#E7FCFA"
+        			"background-color": "#FCF9E7"
         		},   
         		fontColor: {
-        			"color": "#3CC1A3"
+        			"color": "#E3AA50"
         		} ,       		
         		buttonColor:{
-        			"background-color": "#50E3C2"
+        			"background-color": "#E3AA50"
         		},
         		hashTag:"",
         		backGroundImg:"",
@@ -296,13 +327,13 @@
         		brief:"ADP, Inc., UX Design Intern | ",
         		duration:"May - Aug. 2017",         		
         		mainColor: {
-        			"background-color": "#FCF9E7"
+        			"background-color": "#FFF3EC"
         		},   
         		fontColor: {
-        			"color": "#E3AA50"
+        			"color": "#DC7119"
         		} ,       		
         		buttonColor:{
-        			"background-color": "#E3AA50"
+        			"background-color": "#F28932"
         		},
         		hashTag:"",
         		backGroundImg:"images/adpPrev.png",
@@ -342,18 +373,22 @@
         	}      	        	
         	];
 
-        	$scope.className= 'potluck';
+        	$scope.className= 'amazoningReview';
 
         	$scope.setClass = function(className) {
         		$scope.className = className;
 			      
 			    // set the location.hash to the id of
 			    // the element you wish to scroll to.
-			    if (className == 'potluck') {
-			    	$location.hash('potluck');
+			    if (className == 'amazoningReview') {
+			    	$location.hash('amazoningReview');
 			    	$anchorScroll();
 
 			    }
+			    else if (className == 'potluck') {
+			    	$location.hash('potluck');
+			    	$anchorScroll();
+			    }			    
 			    else if (className == 'minibay') {
 			    	$location.hash('minibay');
 			    	$anchorScroll();
@@ -374,6 +409,9 @@
 
 
         	angular.element(function() {
+
+				var amazoningReview = angular.element(document.getElementById("amazoningReview")).prop('offsetTop');
+
 				var pot = angular.element(document.getElementById("potluck")).prop('offsetTop');
 				//console.log(pot);
 
@@ -390,8 +428,11 @@
   					$scope.$apply( function() {
 	         			var Ytop = $window.pageYOffset;
 	         			//console.log(Ytop);
-	                    if (Ytop >= pot && Ytop <= mini) {
-	                    	$scope.className = 'potluck';
+	                    if (Ytop >= amazoningReview && Ytop <= pot) {
+	                    	$scope.className = 'amazoningReview';
+	                    }
+	                    else if (Ytop >= pot && Ytop < mini) {
+	             	      	$scope.className = 'potluck';
 	                    }
 	                    else if (Ytop >= mini && Ytop < omni) {
 	             	      	$scope.className = 'minibay';
