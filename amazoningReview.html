@@ -124,7 +124,7 @@
                     <li class="menu-subtitle"><a href="#research" class="menu-title"  ng-class="{'activeMenu': className == 'research'}">RESEARCH</a></li>
 <!--                     <li class="menu-subtitle"><a href="#targetUser" ng-class="{'activeMenu': className == 'targetUser'}">Competitive Analysis</a></li>  
  -->                    
-                    <li class="menu-subtitle"><a href="#competitiveAnalysis" ng-class="{'activeMenu': className == 'competitiveAnalysis'}">Competitive Analysis</a></li>
+                    <li class="menu-subtitle"><a href="#competitiveAnalysis" ng-class="{'activeMenu': className == 'competitiveAnalysis'}">Literature Review</a></li>
                     <li class="menu-subtitle"><a href="#userJourneyMap" ng-class="{'activeMenu': className == 'userJourneyMap'}"> User Journey Map</a></li>
                     <li class="menu-subtitle"  ng-class="{'activeMenu': className == 'designTasks'}"><a href="#designTasks"> Design Tasks</a></li>
 
@@ -153,8 +153,9 @@
 					<div class="project-content">
                 	    <h1 style="padding-top: 0px; margin-top: 0px">OVERVIEW</h1>
 						<h2 id="problemSpace">Problem Space</h2>
-                        <p>When people shop products which they are unfamiliar with, they would like to read reviews for more information. For instance, what's the key feature of the product. Or whether some features are as good as the product description. There is a need for a visualization tool to help people efficiently utilize product reviews. <br>
-                        I choose to focus on earphone reviews for following reasons. 1. There are various type of earphones. 2. People would like to spend time to understand earphone. And the data I use is 100 popular earphone products and their review during the end of 2017. </p>
+                        <p>When people shop products which they are unfamiliar with, they would like to read reviews for more information. For instance, what's the key feature of the product. Or whether some features are as good as the product description. There is a need for a visualization tool to help people efficiently utilize product reviews.</p>
+                        <p>I choose to focus on earphone reviews for following reasons. 1. There are various type of earphones. 2. People would like to spend time to understand earphone. And the data I use is 100 popular earphone products and their review during the end of 2017. </p>
+                        <p>The target user are millennials, regardless of their education background, gender, and income. And an important assumption here is that target user have certain amount of experience with online shopping and are familiar with web applications.</p>
 <!-- 						<h2 id="methodology">Methodology</h2>
 						<a href="images/methodology.png">
 							<img src="images/methodology.png">
@@ -182,8 +183,10 @@
 				<div class="project-content">
             	    <h1 class="">RESEARCH</h1>
 					<div class="section-dissection">After understand the problem space how we narrow down the problem?</div>                	    
-					<h2 id="competitiveAnalysis">Competitive Analysis</h2>
-					<p>I did competitive analysis of 6 product review visualization tools. Some tools don't have an overview page therefore can't help people who are unfamiliar with earphones. The other tools are designed for expert user therefore would be difficult for normal people to use although it support the whole overview-detail tasks. So my opportunity is designing a visualization tool which requires minimal mental effort. The target user is young people (18-30) who would like to shop online. </p> 
+					<h2 id="competitiveAnalysis">Literature Review</h2>
+					<h3>Design Framework</h3>
+					<p>Information visualization is a process of visualizing data to help user to seek insights of data or assist user to have better communication of data. It is very important to understand the data and choose visualization form accordingly. Shneiderman categorizes data into 7 types: 1-, 2-, 3-dimensional data, temporal data, multi-dimensional data, tree data and network data2. For example, product data itself is multi-dimensional data. A possible solution for visualize such data could be a 2-dimensional scatterplot with controllers controlling other dimensions. Another alternative solution could be a multi-dimensional scatterplot.</p>
+					<p>Shneiderman introduced one of the most important design framework of interactive visualization application: The Visual Information-Seeking Mantra. The most common tasks are: overview, zoom, filter, and details-on-demand. Overview allows user see overall pictures of the entire collection. Zoom allows user to focus on details they are interested in while filter allows user filter out things they are uninterested in. Details-on-demand allows user to further explore features of a group. Shneiderman also talks about three other techniques: relate, history and extract. Relate can help user to find how an item relate to another one. History gives user control of their action by allowing they to undo or redo the action. Extract functions in the same way, helping user to save the progress of their exploration.</p> 
 
 					<h2 id="userJourneyMap">User Journey Map</h2>
 					<p>I did 6 semi-structured interviews to understand the process of online shopping and used user journey map to analyze the result. There are three type of users: researcher user, leisure user, follower user.</p>
@@ -199,7 +202,7 @@
 					<h2 id="designTasks">Design Tasks</h2>
 					<ul>
 						<li>Help user understand the domain knowledge of earphones.</li>
-						<li>Support user to search/ filter products based on feature/ scenario.</li>
+						<li>Support user to search/filter products based on feature/ scenario.</li>
 						<li>Help user find what other people review about certain features.</li>
 						<li>Help user compare products over certain features.</li>
 					</ul>
@@ -274,6 +277,9 @@
 
 
 					<h2>AmazoningReview VS Amazon</h2>
+					<a href="images/amazonAndAR.png">
+						<img src="images/amazonAndAR.png">
+					</a>					
                     <p>AmazoningReview is a data visualization project. The goal of it is to help user efficiently utilize product review data. It is not a substitute of Amazon. However, our usability result shows that user want to filter reviews over certain features and have easy access to best/worse reviews. They also want to compare product of their choices. </p>
 
 
