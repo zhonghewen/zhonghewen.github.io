@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="projectPotluck">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<title>Simple Deduction</title>
+	
+	<link rel="shortcut icon" href="images/ZhongheLogoSmall.png">
+	
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Plugins -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Template core CSS -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<script type="text/javascript">
+		window.onload = function(){
+	    setTimeout(function(){
+	    var loader = document.getElementsByClassName("page-loader")[0];
+	    loader.className="page-loader fadeout" ;//使用渐隐的方法淡出loading page
+	    setTimeout(function(){loader.style.display="none"},2000)
+	    },2000)//强制显示loading page 2s
+	}
+	</script>
+</head>
+
+<body class="main-body">
+
+	<!-- PRELOADER -->
+	<div class="page-loader" >
+        <div class="preloader-1">
+	          <div>Loading Project Simple Deduction</div>
+	          <span class="line line-1"></span>
+	          <span class="line line-2"></span>
+	          <span class="line line-3"></span>
+	          <span class="line line-4"></span>
+	          <span class="line line-5"></span>
+	          <span class="line line-6"></span>
+	          <span class="line line-7"></span>
+	          <span class="line line-8"></span>
+	          <span class="line line-9"></span>
+    	</div>
+	</div> 
+	<!-- /PRELOADER -->	
+
+	<!-- OVERLAY MENU -->
+	<div id="overlay-menu" class="overlay-menu">
+
+		<a href="#" id="overlay-menu-hide" class="navigation-hide"><i class="ion-close-round"></i></a>
+		
+		<div class="overlay-menu-inner">
+			<nav class="overlay-menu-nav">
+		
+				<ul id="nav">
+		
+					<li class="slidedown">
+						<a href="index.html">HOME</a>
+					</li>
+
+					<li><a href="index.html#portfolio">PORTFOLIO</a></li>
+		
+					<li class="slidedown"><a href="index.html#resume">RESUME</a></li>
+		
+					<li class="slidedown"><a href="index.html#contact">CONTACT</a></li>
+		
+		
+				</ul>
+		
+			</nav>
+		</div>
+		
+		<div class="overlay-navigation-footer">
+		
+			<div class="container">
+		
+				<div class="row">
+		
+					<div class="col-sm-12 text-center">
+						<p class="copyright font-alt m-b-0">© 2017 Designed and Developed by Zhonghe Wen, All Rights Reserved.</p>
+					</div>
+		
+				</div>
+		
+			</div>
+		
+		</div>
+	</div>
+	<!-- /OVERLAY MENU -->
+
+	<!-- WRAPPER -->
+	<div class="wrapper" ng-controller="potluckController">
+
+
+
+		<!-- PROJECT MENU -->
+<!-- 		<div class="project-menu" >
+
+			<nav  >
+				<div>
+					<p><a href="index.html" style="padding-left: 10px;"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;HOME</a></p>
+					<h4 class="project-menu-title">SITCON</h4>
+
+					<div class="project-menu-des">
+					<p><span class="menu-title">Duration</span> April 2018</p>
+					<p><span class="menu-title">Team</span> Zhonghe Wen</p>
+					<p><span class="menu-title">My role</span>  Designer</p>
+					<p><span class="menu-title">Tool</span>  Sketch, InVision, LucidChart, framer.js</p>
+					</div>
+				<ul class="non-bullet-ul" >
+
+
+                    <li class="menu-title"><a href="#overview"  class="menu-title" ng-class="{'activeMenu': className == 'overview'}" >OVERVIEW</a></li>
+                    <li class="menu-subtitle"><a href="#problemSpace" ng-class="{'activeMenu': className == 'problemSpace'}">Problem Space</a></li>               
+                    <li class="menu-subtitle"><a href="#methodology" ng-class="{'activeMenu': className == 'methodology'}"> Methodology</a></li>
+                    <li class="menu-subtitle"><a href="#outcomes" ng-class="{'activeMenu': className == 'outcomes'}"> Outcomes</a></li>               
+
+                    <li class="menu-subtitle"><a href="#research" class="menu-title"  ng-class="{'activeMenu': className == 'research'}">RESEARCH</a></li>
+                    <li class="menu-subtitle"><a href="#targetUser" ng-class="{'activeMenu': className == 'targetUser'}">User Type and Rights</a></li>                      
+                    <li class="menu-subtitle"><a href="#targetUser" ng-class="{'activeMenu': className == 'targetUser'}">Online Reviews</a></li>  
+                    <li class="menu-subtitle"><a href="#userNeeds" ng-class="{'activeMenu': className == 'userNeeds'}"> Task Analysis</a></li>
+                    <li class="menu-subtitle"  ng-class="{'activeMenu': className == 'persona'}"><a href="#persona"> User Flow</a></li>
+
+
+                    <li class="menu-subtitle"><a href="#design" class="menu-title" ng-class="{'activeMenu': className == 'design'}">DESIGN</a></li>
+                    <li class="menu-subtitle"><a href="#designNeeds" ng-class="{'activeMenu': className == 'designNeeds'}">  Design Alternatives</a></li>
+                    <li class="menu-subtitle"><a href="#informationArchitecture" ng-class="{'activeMenu': className == 'informationArchitecture'}"> Wireframe</a></li>
+                    <li class="menu-subtitle"><a href="#wireFrame" ng-class="{'activeMenu': className == 'wireframe'}"> Interaction Example 1</a></li>
+                    <li class="menu-subtitle"><a href="#uiKit" ng-class="{'activeMenu': className == 'uiKit'}">  Interaction Example 2</a></li>
+                    <li class="menu-subtitle"><a href="#currentDesign" ng-class="{'activeMenu': className == 'currentDesign'}">  Current Design</a></li> 
+
+                    <li class="menu-title"><a href="#challenges" class="menu-title" ng-class="{'activeMenu': className == 'challenges'}">Challenges</a></li>  
+
+				</ul>
+
+				</div>
+			</nav>
+
+		</div> -->
+		<!-- /PROJECT MENU -->	
+
+		<div class="SITCON-main">
+			<!-- OVERVIEW -->
+			<div class="project-overview" id="overview">
+					<div class="SITCON-content">
+                	    <h1 style="padding-top: 0px; margin-top: 0px">OVERVIEW</h1>
+						<h2 id="problemSpace">Problem Space</h2>
+                        <p>The primary objective is to reduce calls to the Help Desk and to provide self-service capability for the user. According to the document, there are three major problems in adding a simple deduction:</p>
+                        <ul>
+                        	<li>It's difficult for user to think up a unique deduction code.</li>
+                        	<li>Users don't understand that simple deduction is a post-tax deduction.</li>
+                        	<li>Users are not confident in deciding whether their deduction is simple deduction.</li>
+                        </ul>
+                        <p>Considering the limited time this project will focus on solving the listed problem and improve the usability.</p>
+						<h2 id="methodology">Design Process</h2>
+						<a href="images/processDE2.png">
+							<img src="images/processDE2.png">
+						</a>
+						<h2 id="outcomes">Outcomes</h2>
+						<p>A InVision prototype.</p>
+						<ul>
+							<a href="https://invis.io/97JD7V0DK5A#/298962402_Deduction_Table"><li>Invision Prototype</li></a>
+						</ul>
+					</div>
+								
+<!-- 					<div class="SITCON-content">
+						<h3>Prototype</h3>
+					</div>
+					<div class="SITCON-content">
+						<div style="text-align: center; width: 100%;">
+          					<iframe  align="middle" width="100%" height="1200px" src="https://invis.io/E4I4HO2VAZX#/295523459_LongAction1" frameborder="0" allowfullscreen></iframe> 
+          				</div>
+					</div> -->
+
+			</div>
+			<!-- /OVERVIEW -->
+
+			<!-- RESEARCH -->
+			<div class="" id="research">
+				<div class="SITCON-content">
+            	    <h1 class="">RESEARCH</h1>
+					<div class="section-dissection">After understand the problem space how we narrow down the problem?</div>                	    
+					<h2 id="targetUser">Context</h2>
+					<p>Users do not add simple deductions very often (once or twice a year) but it is a very important task and users need to set this up correctly to avoid a problem in payroll.</p>
+
+
+					<h2 id="informationArchitecture">Hierarchical Task Analysis</h2>
+					<p>After understand the context I conducted hierarchical task anlaysis to understand the detailed tasks. I separated simple deduction from the other deduction becuase: 1. We want to encourage user to add simple deduction on themselves; 2. Simple deduction takes almost 80% of all deductions.</p>
+					<a href="images/HTADE2.png">
+						<img src="images/HTADE2.png">
+					</a>
+
+					<ul>As you can see in the task analysis, when users want to set up a simple deduction there are four tasks:
+						<li>Understand whether the deduction is "simple deduction"</li>
+						<li>Fill in information</li>
+						<li>Contact ADP if user user General Ledger products</li>
+						<li>Go back to add regular deduction code if users find that their deduction is not simple deduction</li>
+					</ul>
+
+					<h2 id="userFlow">Current User Flow and Design Ideas</h2>
+					<h3>Current User Flow</h3>
+					<p>I also analyzed the user flow and identified usability problems in the flow.</p>
+
+					<ul>
+						<a href="images/userFlowDE2.png">
+							<img src="images/userFlowDE2.png" >
+						</a>
+					</ul>
+
+	
+
+					<h3>Design Ideas: Assisting User Entering A Unique Deduction Code</h3>
+					<p>As you can see in the user flow, there is only one step related to "thinking up a unique code". So when user think about the unique code we could:</p>
+					<ul>
+						<li>Suggest a easy-to-remember rule to generate deduction code</li>
+						<li>Display the most recent deduction code</li>
+						<li>Allow user to check the availability of the code they input</li>
+						<a href="images/p1.png">
+							<img src="images/p1.png">
+						</a>
+					</ul>
+					<p>Consider that users may have their own rules to generate deduction codes the first idea may won't work. So I decide to use a combination of the second and third idea.</p>
+
+
+					<h3>Design Ideas: Encouraging User to Set Up Simple Deductions on Their Own</h3>
+					<p>As you can see in the user flow, users need to complete three steps to successully add a simple deduction code:</p>
+					<ul>
+						<li>Select "other" as the category</li>
+						<li>Check "simple deduction"</li>
+						<li>Confirm the alert modal</li>
+					</ul>
+					<p>There are two major problems. First, if users don't choose "other" they even won't be aware of "simple deduction" while it takes almost 80% of deductions. So we need to put sit in a more noticeable place. Second, users need to confirm twice to actually check the "simple deduction" box. At the meantime, they need to read and comprehend the qualification of it. What users really need here are: 1. Being told whether simple deduction could be applied to their situation; 2. Being aware of advantages of simple deductions; 3. Understanding it's not that risky to to use simple deduction. The solution could be:</p>
+					<ul>
+						<li>After user click "add" in the deduction table page, they will be provided the options of simple deductions and regular deductions. The design should help user to check qualifications before they fill in any further information</li>
+						<a href="images/p21.png">
+							<img src="images/p21.png">
+						</a>						
+						<li>Put a suggestion beside "category" to encourage user to try simple deduction.</li>
+						<a href="images/p22.png">
+							<img src="images/p22.png">
+						</a>
+					</ul>
+
+
+					
+				</div>
+			</div>
+			<!-- /RESEARCH -->
+
+			<!-- DESIGN -->
+			<div class="" id="design">
+				
+				<div class="SITCON-content">
+
+					<h2 id="informationArchitecture">Wireframes</h2>
+					<a href="images/wireframeDE2.png">
+						<img src="images/wireframeDE2.png">
+					</a>
+
+					<h2 id="informationArchitecture">Design Details</h2>
+					<h3>Encourage User to Setup Simple Deduction on Their Own.</h3>
+					<p>This design puts simple deduction in a noticeable place and the description under it explains the advantage of simple deduction. Users need to check the qualification first. If their deductions aren't qualified for simple deduction they will be suggested to use reglar deduction (which is the original setup) instead.</p>
+					<video src="videos/addSimple.mov" controls="controls" loop></video>	
+
+					<h3>Find A Unique Deduction Code</h3>
+					<p> In this design, users can see the latest code they generated for this company and check availability of their input.	Certain fields (e.g. category) are pre-selected and it's frozen so that users couldn't make changes on these fields. Users also need to check the agreement to continue. If users change their mind they can also easily go back to regular deduction at any time they want.</p>					
+					<video src="videos/fillForm.mov" controls="controls" loop></video>	
+				</div>                  
+
+			</div>
+			<!-- /DESIGN -->
+
+
+			<!-- CHALLENGES -->
+			<div class="" id="challenges">
+																					
+				<div class="SITCON-content" style="padding-bottom: 30px;">
+					<h2>Prototype</h2>
+					<div class="SITCON-content">
+						<div style="text-align: center;">
+          					<iframe width="90%" height="1200px" align="middle" src="https://invis.io/97JD7V0DK5A#/298962402_Deduction_Table" frameborder="0" allowfullscreen></iframe> 
+          				</div>
+					</div>
+                </div>			                        			                        
+			</div>
+			<!-- /CHALLENGES -->
+
+<!-- 
+			<div class="link">
+				<div class="projectLink" class="linkAmazoningReview" style="background-color: #CAEBF2;">
+					<a href="amazoningReview.html">
+					<h1>{{link.amazoningReview.caption}}</h1>
+					<p>{{link.amazoningReview.description}}</p>
+					<p>{{link.amazoningReview.hashtag}}</p>	
+					</a>				
+				</div>	
+				<div class="homeAndContact">
+						<p><a href="index.html"><i class="fa fa-home"></i></a></p>
+						<p>Home </p>							
+						<p><a href="mailto:zhonghe.wen@gatech.edu?"><i class="fa fa-envelope-o"></i></a></p>
+						<p>Contact</p>						
+				</div>
+				<div class="projectLink" class="linkMinibay" style="background-color: #E7FCFA;">
+					<a href="project02.html">
+					<h1>{{link.minibay.caption}}</h1>
+					<p>{{link.minibay.description}}</p>
+					<p>{{link.minibay.hashtag}}</p>	
+					</a>				
+				</div>					
+			</div>
+
+			<footer>
+				<div><p class="copyright font-alt m-b-0">© 2017 Designed and Developed by Zhonghe Wen, All Rights Reserved.</p></div>
+			</footer>	 -->		
+		</div>	
+
+
+
+	</div>
+	<!-- /WRAPPER -->
+
+	<!-- SCROLLTOP 
+	<div class="scroll-up">
+		<a href="#totop"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+-->
+
+	<!-- Javascript files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+
+<!-- 	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-90435501-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+    <script>
+        angular.module('projectPotluck',[])
+        .controller('potluckController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
+
+        	$scope.className= 'overview';
+
+        	angular.element(function() {
+				var overview = angular.element(document.getElementById("overview")).prop('offsetTop');
+				var problemSpace = angular.element(document.getElementById("problemSpace")).prop('offsetTop');
+				var methodology = angular.element(document.getElementById("methodology")).prop('offsetTop');
+				var outcomes = angular.element(document.getElementById("outcomes")).prop('offsetTop');
+
+				var research = angular.element(document.getElementById("research")).prop('offsetTop');			
+				var targetUser = angular.element(document.getElementById("targetUser")).prop('offsetTop');
+				var userNeeds = angular.element(document.getElementById("userNeeds")).prop('offsetTop');			
+				var persona = angular.element(document.getElementById("persona")).prop('offsetTop');
+
+				var design = angular.element(document.getElementById("design")).prop('offsetTop');			
+				var designNeeds = angular.element(document.getElementById("designNeeds")).prop('offsetTop');
+				var informationArchitecture = angular.element(document.getElementById("informationArchitecture")).prop('offsetTop');		
+				var wireframe = angular.element(document.getElementById("wireframe")).prop('offsetTop');
+				var uiKit = angular.element(document.getElementById("uiKit")).prop('offsetTop');
+				var designIterations = angular.element(document.getElementById("designIterations")).prop('offsetTop');		
+				var currentDesign = angular.element(document.getElementById("currentDesign")).prop('offsetTop');
+
+				var challenges = angular.element(document.getElementById("challenges")).prop('offsetTop');	
+
+
+  				angular.element($window).bind('scroll', function(e) {
+  					$scope.$apply( function() {
+	         			var Ytop = $window.pageYOffset;
+	         			//console.log(Ytop);
+	                    if (Ytop >= overview && Ytop <= problemSpace) {
+	                    	$scope.className = 'overview';
+	                    }
+	                    else if (Ytop >= problemSpace && Ytop <= methodology) {
+	             	      	$scope.className = 'problemSpace';
+	                    }
+	                    else if (Ytop >= methodology && Ytop <= outcomes) {
+	             	      	$scope.className = 'methodology';
+	                    } 
+	                    else if (Ytop >= outcomes && Ytop <= research) {
+	             	      	$scope.className = 'outcomes';
+	                    }
+	                    else if (Ytop >= research && Ytop <= targetUser) {
+	             	      	$scope.className = 'research';
+	                    }
+	                    else if (Ytop >= targetUser && Ytop <= userNeeds) {
+	             	      	$scope.className = 'targetUser';
+	                    }
+	                    else if (Ytop >= userNeeds && Ytop <= persona) {
+	             	      	$scope.className = 'userNeeds';
+	                    } 
+	                    else if (Ytop >= persona && Ytop <= design) {
+	             	      	$scope.className = 'persona';
+	                    }
+	                    else if (Ytop >= design && Ytop <= designNeeds) {
+	             	      	$scope.className = 'design';
+	                    }  
+	                    else if (Ytop >= designNeeds && Ytop <= informationArchitecture) {
+	             	      	$scope.className = 'designNeeds';
+	                    }
+	                    else if (Ytop >= informationArchitecture && Ytop <= wireframe) {
+	             	      	$scope.className = 'informationArchitecture';
+	                    } 
+	                    else if (Ytop >= wireframe && Ytop <= uiKit) {
+	             	      	$scope.className = 'wireframe';
+	                    }
+	                    else if (Ytop >= uiKit && Ytop <= designIterations) {
+	             	      	$scope.className = 'uiKit';
+	                    }
+	                    else if (Ytop >= designIterations && Ytop <= currentDesign) {
+	             	      	$scope.className = 'designIterations';
+	                    }
+	                    else if (Ytop >= currentDesign && Ytop <= challenges) {
+	             	      	$scope.className = 'currentDesign';
+	                    } 
+	                    else if (Ytop >= challenges ) {
+	             	      	$scope.className = 'challenges';
+	                    };	                               	                                      
+  					});
+
+    			});
+
+    		});
+
+
+			$scope.link = {
+				potluck: {
+					caption: "Potluck",
+					description: "Have troubles identifying and ordering tasty foods? Check out Potluck to see how we solve the problem!",
+					hashtag: "#MobileApp #LeadDesigner"
+				},
+				minibay: {
+					caption: "Minibay",
+					description: "How long has it been since last time you visited your parents? Check out MiniBay to see how we assist the elderly’ to maintain their health and bridge they and their children.",
+					hashtag: "#DesignForTheElderly #CrossPlatformProduct #Designer"					
+				},
+				omniar: {
+					caption: "Omniar",
+					description: "Feel your shopping experience at Walmart is not ideal? Check out OmniAR to see how we solve the problem!",
+					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
+				},
+				amazoningReview: {
+					caption: "Amazoning Review",
+					description: "Want to efficiently utilize reviews to understand earphones? Check out Amazoning Review to see how we solve the problem!",
+					hashtag: "#ARDesign #ComplicatedUserGroup #LeadDesigner"					
+				},				
+			};
+
+
+  		}]);
+
+    </script>	 -->
+</body>
+</html>
